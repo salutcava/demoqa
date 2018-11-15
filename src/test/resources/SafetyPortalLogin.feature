@@ -7,6 +7,7 @@ Feature: Login test in QA Safety Cube Master
       Given I enter my username '<username>'
       And I enter my password '<password>'
       Then I click on the login button
+      And I check the url
 
   Examples:
   |   username  |   password  |
