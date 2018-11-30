@@ -17,7 +17,7 @@ public class SaveScreenshot {
         String filename = filenamea.replace(' ','-');
         try {
             // Specify the destination where the image will be saved
-            File dest = new File("report/screenshot/"+ date() + "/" + timestamp() + "-" + filename +".jpg");
+            File dest = new File("report/screenshot/" + timestamp() + "-" + filename +".jpg");
             // Copy the screenshot to destination
             FileUtils.copyFile(src, dest);
         } catch (IOException ex) {

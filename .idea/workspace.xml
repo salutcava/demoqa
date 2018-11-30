@@ -3,25 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="10b3c3d2-29c4-4f64-b418-ed754a40f2e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etc/junit-noframes.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/etc/junit-noframes.xsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junit-noframes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TakeScreenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/img/logo-safetyline.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/img/logo-safetyline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TakeScreenshot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SaveScreenshot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SaveScreenshot.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RunCucumberTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCucumberTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RunCucumberTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +27,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FUSProjectUsageTrigger">
     <session id="2123729557">
       <usages-collector id="statistics.lifecycle.project">
@@ -48,40 +48,44 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="59" />
-          <entry key="feature" value="594" />
-          <entry key="java" value="1826" />
+          <entry key="dummy" value="71" />
+          <entry key="feature" value="974" />
+          <entry key="java" value="3224" />
           <entry key="md" value="460" />
-          <entry key="xml" value="210" />
-          <entry key="xsl" value="93" />
+          <entry key="properties" value="162" />
+          <entry key="xml" value="348" />
+          <entry key="xsl" value="115" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="586" />
-          <entry key="JAVA" value="1826" />
-          <entry key="PLAIN_TEXT" value="521" />
+          <entry key="Cucumber" value="966" />
+          <entry key="JAVA" value="3224" />
+          <entry key="PLAIN_TEXT" value="533" />
+          <entry key="Properties" value="162" />
           <entry key="Substeps" value="6" />
-          <entry key="XML" value="303" />
+          <entry key="XML" value="463" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="feature" value="10" />
+          <entry key="feature" value="14" />
           <entry key="iml" value="2" />
-          <entry key="java" value="30" />
+          <entry key="java" value="40" />
           <entry key="md" value="4" />
+          <entry key="properties" value="3" />
           <entry key="xml" value="1" />
-          <entry key="xsl" value="4" />
+          <entry key="xsl" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cucumber" value="9" />
+          <entry key="Cucumber" value="13" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="40" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="XML" value="5" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -91,29 +95,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+            <state relative-caret-position="295">
+              <caret line="79" column="68" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,11 +107,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FORM_KNE_ASR.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/FORM_KNE_ASR.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,9 +158,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Substep Feature" />
         <option value="Feature" />
+        <option value="XSLT Stylesheet" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -155,9 +176,21 @@
       <find>testcase.test.header</find>
       <find>safety</find>
       <find>TestName</find>
+      <find>screen</find>
+      <find>Scenario</find>
+      <find>../</find>
+      <find>url</find>
+      <find>&lt;img</find>
+      <find>junit</find>
+      <find>browser.</find>
+      <find>browser</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
+      <replace>../../</replace>
+      <replace>server</replace>
+      <replace>driver.</replace>
+      <replace>driver</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -176,13 +209,26 @@
         <option value="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/main/java/TakeScreenshot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" />
         <option value="$PROJECT_DIR$/src/etc/junit-noframes.xsl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" />
         <option value="$PROJECT_DIR$/etc/junit-noframes.xsl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/etc/testng.xsl" />
+        <option value="$PROJECT_DIR$/src/test/java/NTE/NTE_DAMG_fr.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyCube/NTE/NTE_DAMG_fr.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/NTE/NTE_DAMG_fr.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyCube/Forms/NTE/NTE_DAMG_fr.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/SafetyCube/Forms/NTE/NTE_DAMG_fr.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyCube/Forms/KNE/NTE_DAMG_fr.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/SafetyCube/Forms/KNE/NTE_DAMG_fr.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/NTE_DAMG_fr.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/NTE_DAMG_fr.java" />
         <option value="$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/FORM_KNE_ASR.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/FORM_KNE_ASR.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" />
       </list>
     </option>
   </component>
@@ -193,11 +239,39 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="automated-tests" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1441" />
-    <option name="y" value="-263" />
-    <option name="width" value="1685" />
-    <option name="height" value="875" />
+    <option name="x" value="1364" />
+    <option name="y" value="-332" />
+    <option name="width" value="1725" />
+    <option name="height" value="932" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Cucumber</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CucumberJavaStepDefClassInDefaultPackage</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -218,6 +292,11 @@
             <path>
               <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
               <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,6 +312,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -244,19 +330,27 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542291228033" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.5.zip!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543597451297" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junitpdfreport_1_1_prerelease_20080220" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5505747" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Cucumber" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\automatedtests\src\test\resources" />
+      <recent name="C:\automatedtests\src\test\java" />
+      <recent name="C:\automatedtests\src\test\resources\SafetyCube" />
+      <recent name="C:\automatedtests\src\test\resources\SafetyCube\NTE" />
       <recent name="C:\automatedtests\" />
-      <recent name="C:\automatedtests" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="SafetyCube.NTE" />
+      <recent name="SafetyCube" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\automatedtests\src\test\resources\NTE" />
       <recent name="C:\automatedtests\src\main\resources" />
       <recent name="C:\automatedtests\src\test\resources" />
     </key>
@@ -273,7 +367,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckSauceLabsHomePageTest">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="GLUE" value="automatedtests" />
       <method v="2">
@@ -304,8 +398,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckSauceLabsHomePageTest" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="JUnit.CheckSauceLabsHomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -332,6 +426,12 @@
     <history-entry file="CheckSauceLabsHomePageTest - 2018.11.12 at 15h 48m 43s.xml">
       <configuration name="CheckSauceLabsHomePageTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRunner - 2018.11.23 at 17h 32m 46s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.11.23 at 17h 35m 28s.xml">
+      <configuration name="TestRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,9 +444,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1359" y="-320" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902913" visible="true" weight="0.23624161" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902913" weight="0.23624161" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.23288591" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -360,8 +459,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.35384616" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.43216783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4986577" visible="true" weight="0.35384616" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.35384616" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -371,9 +470,38 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
       <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="8" side_tool="true" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902913" weight="0.23624161" />
+      <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.23288591" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5019455" side_tool="true" weight="0.23288591" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4986577" visible="true" weight="0.35384616" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.35384616" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="8" side_tool="true" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -423,10 +551,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4-sources.jar!/cucumber/runtime/junit/JUnitReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SaveScreenshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="142">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -435,50 +570,142 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/junit-noframes.xsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="321" column="8" lean-forward="true" selection-start-line="321" selection-start-column="8" selection-end-line="321" selection-end-column="8" />
-          <folding>
-            <element signature="n#tr#0;n#xsl:template#8;n#xsl:stylesheet#0;n#!!top" />
-            <element signature="n#tr#0;n#xsl:template#11;n#xsl:stylesheet#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="212">
+          <caret line="431" selection-start-line="431" selection-end-line="431" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4-sources.jar!/cucumber/runtime/junit/JUnitReporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="54" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+          <caret column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/testng.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="1012" column="18" lean-forward="true" selection-start-line="1012" selection-start-column="18" selection-end-line="1012" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NTE_DAMG/fr/html.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+        <state relative-caret-position="70">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#i_enter_my_username#0;class#SafetyPortalLogin#0" />
+            <element signature="method#i_enter_my_password#0;class#SafetyPortalLogin#0" />
+            <element signature="method#i_click_on_the_login_button#0;class#SafetyPortalLogin#0" />
+            <element signature="method#i_check_the_page#0;class#SafetyPortalLogin#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NTE/NTE_DAMG_fr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCube/NTE/NTE_DAMG_fr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/NTE/NTE_DAMG_fr.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCube/Forms/NTE/NTE_DAMG_fr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyCube/Forms/NTE/NTE_DAMG_fr.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/FORM_KNE_ASR.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FORM_KNE_ASR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="79" column="68" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

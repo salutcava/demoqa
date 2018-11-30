@@ -7,11 +7,12 @@ Feature: Login test in QA Safety Cube Master
       Given I enter my username '<username>'
       And I enter my password '<password>'
       Then I click on the login button
-      And I check the url
+      And I check the page
+      And click action
 
   Examples:
   |   username  |   password  |
-  | safety-line | Telemark_64 |
+  | safety-line-olivier | Bonjour123 |
 #  | safety-lina | Telemark_64 |
 #  | safety-line | Telemark_65 |
 #  | safety-line | Telemark_65 |

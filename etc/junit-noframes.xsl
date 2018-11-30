@@ -308,7 +308,7 @@
    This is based on the original idea by Erik Hatcher (ehatcher@apache.org)
    -->
   <xsl:template match="properties">
-    cur = TestCases['<xsl:value-of select="../@package"/>.<xsl:value-of select="../@name"/>'] = new Array();
+    cur = TestCases['<xsl:value-of select="../../@package"/>.<xsl:value-of select="../../@name"/>'] = new Array();
     <xsl:for-each select="property">
     <xsl:sort select="@name"/>
         cur['<xsl:value-of select="@name"/>'] = '<xsl:call-template name="JS-escape"><xsl:with-param name="string" select="@value"/></xsl:call-template>';
