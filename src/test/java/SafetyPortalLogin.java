@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SafetyPortalLogin {
@@ -17,10 +16,10 @@ public class SafetyPortalLogin {
     private Scenario scenario;
 
     @Before
-    public void SafetyPortalBefore(Scenario scenario) {
+    private void SafetyPortalBefore(Scenario scenario) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olivier\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTER/");
+        driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTERwwwww/");
         this.scenario = scenario;
         System.out.println(this.scenario);
     }
@@ -69,16 +68,16 @@ public class SafetyPortalLogin {
 
     @And("^click action")
     public void action_link(){
-        driver.findElement(By.xpath("//*[@id=\"form_52\"]")).click();
-        System.out.println("Filling the data");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
-
-        driver.findElement(By.id("chr_1_2")).sendKeys("AFR345");
-
-        Select select = new Select(driver.findElement(By.id("chr_1_4")));
-        select.deselectAll();
-        select.selectByVisibleText("A330-200");
+//        driver.findElement(By.xpath("//*[@id=\"form_52\"]")).click();
+//        System.out.println("Filling the data");
+//
+//        WebDriverWait wait = new WebDriverWait(driver, 30);
+//        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
+//
+//        driver.findElement(By.id("chr_1_2")).sendKeys("AFR345");
+//
+//        Select select = new Select(driver.findElement(By.id("chr_1_4")));
+//        select.deselectAll();
+//        select.selectByVisibleText("A330-200");
     }
 }

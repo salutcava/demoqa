@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="2" failures="0" name="TestRunner" package="" skipped="3" tests="9" time="0.048">
+  <testsuite errors="2" failures="0" name="TestRunner" package="" skipped="1" tests="4" time="0.059">
       <properties>
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="cucumber.options" value="--tags @kneform" />
+          <property name="cucumber.options" value="--tags @kne" />
 
           <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin" />
 
@@ -58,7 +58,7 @@
 
           <property name="sun.jnu.encoding" value="Cp1252" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;\Lib;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;\Scripts;C:\Program Files\Git\cmd;C:\jython2.7.0\bin;C:\Program Files\nodejs\;C:\slat-eclipse\at\library\webdrivers\chromedriver.exe;C:\Users\Olivier\Documents\dependencies\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\Olivier\AppData\Local\Microsoft\WindowsApps;C:\Python27\;C:\Users\Olivier\AppData\Roaming\npm;C:\slat-eclipse\at\library\webdrivers\chromedriver.exe;;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;\Lib;C:\Python27\;C:\Python27\Scripts;C:\Python27\Lib;\Scripts;C:\Program Files\Git\cmd;C:\jython2.7.0\bin;C:\Program Files\nodejs\;C:\slat-eclipse\at\library\webdrivers\chromedriver.exe;C:\Users\Olivier\Documents\dependencies\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\Olivier\AppData\Local\Microsoft\WindowsApps;C:\Python27\;C:\Users\Olivier\AppData\Roaming\npm;C:\slat-eclipse\at\library\webdrivers\chromedriver.exe;C:\Users\Olivier\AppData\Local\atom\bin;." />
 
           <property name="maven.conf" value="C:\Users\Olivier\Documents\dependencies\apache-maven-3.6.0\bin\../conf" />
 
@@ -92,7 +92,7 @@
 
           <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
 
-          <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumber.options=--tags @kneform" />
+          <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @kne" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
@@ -130,19 +130,34 @@
 
       </properties>
 
-      <testcase classname="Scenario: Fill KNE_ASR form" name="Given I enter my username &apos;safety-line-olivier&apos;" time="0.004" />
+      <testcase classname="Scenario: Fill KNE_ASR form" name="Given open form" time="0.011" />
 
-      <testcase classname="Scenario: Fill KNE_ASR form" name="And I enter my password &apos;Bonjour123&apos;" time="0" />
-
-      <testcase classname="Scenario: Fill KNE_ASR form" name="Then I click on the login button" time="0" />
-
-      <testcase classname="Scenario: Fill KNE_ASR form" name="And I check the page" time="0" />
-
-      <testcase classname="Scenario: Fill KNE_ASR form" name="And click action" time="0.007">
-          <error message="You may only deselect all options of a multi-select" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: You may only deselect all options of a multi-select
-	at org.openqa.selenium.support.ui.Select.deselectAll(Select.java:220)
-	at SafetyPortalLogin.action_link(SafetyPortalLogin.java:81)
-	at ✽.And click action(FORM_KNE_ASR.feature:12)
+      <testcase classname="Scenario: Fill KNE_ASR form" name="And the user fills the form" time="0.014">
+          <error message="element not interactable   (Session info: chrome=70.0.3538.110)   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos; System info: host: &apos;DESKTOP-B3IDAST&apos;, ip: &apos;192.168.31.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos; Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true} Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb" type="org.openqa.selenium.ElementNotVisibleException">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-B3IDAST&apos;, ip: &apos;192.168.31.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at FormKneAsr.fill_form(FormKneAsr.java:84)
+	at ✽.And the user fills the form(FormKneAsr.feature:10)
 </error>
 
           <system-out>Filling the data
@@ -150,26 +165,37 @@
 
       </testcase>
 
-      <testcase classname="Scenario: Fill KNE_ASR form" name="Scenario: Fill KNE_ASR form" time="0.008">
-          <error message="You may only deselect all options of a multi-select" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: You may only deselect all options of a multi-select
-	at org.openqa.selenium.support.ui.Select.deselectAll(Select.java:220)
-	at SafetyPortalLogin.action_link(SafetyPortalLogin.java:81)
-	at ✽.And click action(FORM_KNE_ASR.feature:12)
+      <testcase classname="Scenario: Fill KNE_ASR form" name="Scenario: Fill KNE_ASR form" time="0.015">
+          <error message="element not interactable   (Session info: chrome=70.0.3538.110)   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos; System info: host: &apos;DESKTOP-B3IDAST&apos;, ip: &apos;192.168.31.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos; Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true} Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb" type="org.openqa.selenium.ElementNotVisibleException">org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;DESKTOP-B3IDAST&apos;, ip: &apos;192.168.31.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at FormKneAsr.fill_form(FormKneAsr.java:84)
+	at ✽.And the user fills the form(FormKneAsr.feature:10)
 </error>
 
       </testcase>
 
-      <testcase classname="Scenario: Fill KNE_ASR form" name="Given the web browser is at the KNE_ASR form" time="0.008">
-          <skipped />
-
-      </testcase>
-
-      <testcase classname="Scenario: Fill KNE_ASR form" name="And the user fills the form" time="0.01">
-          <skipped />
-
-      </testcase>
-
-      <testcase classname="Scenario: Fill KNE_ASR form" name="Then the user posts the form" time="0.011">
+      <testcase classname="Scenario: Fill KNE_ASR form" name="Then the user posts the form" time="0.019">
           <skipped />
 
       </testcase>

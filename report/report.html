@@ -65,7 +65,7 @@
     
         cur['classworlds.conf'] = 'C:\\Users\\Olivier\\Documents\\dependencies\\apache-maven-3.6.0\\bin\\..\\bin\\m2.conf';
     
-        cur['cucumber.options'] = '--tags @kneform';
+        cur['cucumber.options'] = '--tags @kne';
     
         cur['file.encoding'] = 'Cp1252';
     
@@ -91,7 +91,7 @@
     
         cur['java.io.tmpdir'] = 'C:\\Users\\Olivier\\AppData\\Local\\Temp\\';
     
-        cur['java.library.path'] = 'C:\\Program Files\\Java\\jdk1.8.0_191\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;\\Lib;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;\\Scripts;C:\\Program Files\\Git\\cmd;C:\\jython2.7.0\\bin;C:\\Program Files\\nodejs\\;C:\\slat-eclipse\\at\\library\\webdrivers\\chromedriver.exe;C:\\Users\\Olivier\\Documents\\dependencies\\apache-maven-3.6.0\\bin;C:\\Program Files\\Java\\jdk1.8.0_191\\bin;C:\\Users\\Olivier\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Python27\\;C:\\Users\\Olivier\\AppData\\Roaming\\npm;C:\\slat-eclipse\\at\\library\\webdrivers\\chromedriver.exe;;.';
+        cur['java.library.path'] = 'C:\\Program Files\\Java\\jdk1.8.0_191\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;\\Lib;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Python27\\Lib;\\Scripts;C:\\Program Files\\Git\\cmd;C:\\jython2.7.0\\bin;C:\\Program Files\\nodejs\\;C:\\slat-eclipse\\at\\library\\webdrivers\\chromedriver.exe;C:\\Users\\Olivier\\Documents\\dependencies\\apache-maven-3.6.0\\bin;C:\\Program Files\\Java\\jdk1.8.0_191\\bin;C:\\Users\\Olivier\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Python27\\;C:\\Users\\Olivier\\AppData\\Roaming\\npm;C:\\slat-eclipse\\at\\library\\webdrivers\\chromedriver.exe;C:\\Users\\Olivier\\AppData\\Local\\atom\\bin;.';
     
         cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
     
@@ -157,7 +157,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumber.options=--tags @kneform';
+        cur['sun.java.command'] = 'org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @kne';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -229,7 +229,7 @@
 <th>Tests</th><th>Failures</th><th>Errors</th><th>Skipped</th><th>Success rate</th><th>Time</th>
 </tr>
 <tr valign="top" class="Error">
-<td>9</td><td>0</td><td>2</td><td>3</td><td>77.78%</td><td>0.048</td>
+<td>4</td><td>0</td><td>2</td><td>1</td><td>50.00%</td><td>0.059</td>
 </tr>
 </table>
 <table border="0" width="95%">
@@ -247,46 +247,25 @@
 <th>Name</th><th>Status</th><th width="70%">Type</th><th nowrap>Time(s)</th><th>Screenshot</th>
 </tr>
 <tr valign="top" class="">
-<td>Given I enter my username 'safety-line-olivier'</td><td>Success</td><td></td><td>0.004</td><td valign="middle" align="center"><a href="report/screenshot/Given I enter my username 'safety-line-olivier'"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
-</tr>
-<tr valign="top" class="">
-<td>And I enter my password 'Bonjour123'</td><td>Success</td><td></td><td>0.000</td><td valign="middle" align="center"><a href="report/screenshot/And I enter my password 'Bonjour123'"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
-</tr>
-<tr valign="top" class="">
-<td>Then I click on the login button</td><td>Success</td><td></td><td>0.000</td><td valign="middle" align="center"><a href="report/screenshot/Then I click on the login button"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
-</tr>
-<tr valign="top" class="">
-<td>And I check the page</td><td>Success</td><td></td><td>0.000</td><td valign="middle" align="center"><a href="report/screenshot/And I check the page"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
+<td>Given open form</td><td>Success</td><td></td><td>0.011</td><td valign="middle" align="center"><a href="report/screenshot/Given open form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
 </tr>
 <tr valign="top" class="Error">
-<td>And click action</td><td>Error</td><td>You may only deselect all options of a multi-select<code>
+<td>And the user fills the form</td><td>Error</td><td>element not interactable   (Session info: chrome=70.0.3538.110)   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z' System info: host: 'DESKTOP-B3IDAST', ip: '192.168.31.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true} Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb<code>
 <br>
-<br>java.lang.UnsupportedOperationException: You may only deselect all options of a multi-select<br>	at org.openqa.selenium.support.ui.Select.deselectAll(Select.java:220)<br>	at SafetyPortalLogin.action_link(SafetyPortalLogin.java:81)<br>	at ✽.And click action(FORM_KNE_ASR.feature:12)<br>
-</code></td><td>0.007</td><td valign="middle" align="center"><a href="report/screenshot/And click action"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
+<br>org.openqa.selenium.ElementNotVisibleException: element not interactable<br>  (Session info: chrome=70.0.3538.110)<br>  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 0 milliseconds<br>Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'<br>System info: host: 'DESKTOP-B3IDAST', ip: '192.168.31.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}<br>Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb<br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br>	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br>	at FormKneAsr.fill_form(FormKneAsr.java:84)<br>	at ✽.And the user fills the form(FormKneAsr.feature:10)<br>
+</code></td><td>0.014</td><td valign="middle" align="center"><a href="report/screenshot/And the user fills the form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
 </tr>
 <tr valign="top" class="Error">
-<td>Scenario: Fill KNE_ASR form</td><td>Error</td><td>You may only deselect all options of a multi-select<code>
+<td>Scenario: Fill KNE_ASR form</td><td>Error</td><td>element not interactable   (Session info: chrome=70.0.3538.110)   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 0 milliseconds Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z' System info: host: 'DESKTOP-B3IDAST', ip: '192.168.31.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191' Driver info: org.openqa.selenium.chrome.ChromeDriver Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true} Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb<code>
 <br>
-<br>java.lang.UnsupportedOperationException: You may only deselect all options of a multi-select<br>	at org.openqa.selenium.support.ui.Select.deselectAll(Select.java:220)<br>	at SafetyPortalLogin.action_link(SafetyPortalLogin.java:81)<br>	at ✽.And click action(FORM_KNE_ASR.feature:12)<br>
-</code></td><td>0.008</td><td valign="middle" align="center"><a href="report/screenshot/Scenario: Fill KNE_ASR form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
-</tr>
-<tr valign="top" class="">
-<td>Given the web browser is at the KNE_ASR form</td><td>Skipped</td><td>N/A<code>
-<br>
-<br>
-</code></td><td>0.008</td><td valign="middle" align="center"><a href="report/screenshot/Given the web browser is at the KNE_ASR form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
-</tr>
-<tr valign="top" class="">
-<td>And the user fills the form</td><td>Skipped</td><td>N/A<code>
-<br>
-<br>
-</code></td><td>0.010</td><td valign="middle" align="center"><a href="report/screenshot/And the user fills the form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
+<br>org.openqa.selenium.ElementNotVisibleException: element not interactable<br>  (Session info: chrome=70.0.3538.110)<br>  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 0 milliseconds<br>Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'<br>System info: host: 'DESKTOP-B3IDAST', ip: '192.168.31.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'<br>Driver info: org.openqa.selenium.chrome.ChromeDriver<br>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Olivier\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61468}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}<br>Session ID: 9b3b4e7945148c9afe31fdcca38bf1fb<br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br>	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br>	at FormKneAsr.fill_form(FormKneAsr.java:84)<br>	at ✽.And the user fills the form(FormKneAsr.feature:10)<br>
+</code></td><td>0.015</td><td valign="middle" align="center"><a href="report/screenshot/Scenario: Fill KNE_ASR form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
 </tr>
 <tr valign="top" class="">
 <td>Then the user posts the form</td><td>Skipped</td><td>N/A<code>
 <br>
 <br>
-</code></td><td>0.011</td><td valign="middle" align="center"><a href="report/screenshot/Then the user posts the form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
+</code></td><td>0.019</td><td valign="middle" align="center"><a href="report/screenshot/Then the user posts the form"><img height="15" src="../media/img/screenshot-icon.png"></a></td>
 </tr>
 </table>
 <div class="Properties">
