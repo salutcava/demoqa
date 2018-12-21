@@ -1,3 +1,5 @@
 SafetyPortalLogin.class
-FormKneAsr.class
+FormKneAsrPortalFilling.class
+FormKneAsrCubeCheck.class
+SafetyCubeLogin.class
 TestRunner.class
