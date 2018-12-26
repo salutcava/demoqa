@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    format = {"html:report/html"}
+    format = {"pretty"}
     //glue = {"helpers","stepDefinitions"}
     //format = {"pretty","html:report/html","json:report/json","usage:report/usage","junit:report/junit"}
 )

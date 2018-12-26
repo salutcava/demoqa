@@ -62,7 +62,7 @@ public class FormKneAsrPortalFilling {
         WebElement MaxFdp = driver.findElement(By.xpath("//*[@id=\"max_fdp\"]"));
         WebElement SaveSend = driver.findElement(By.xpath("/html/body/app-root/ng-component/app-report-create/main/section/div/div/button[3]"));
         WebElement OkPreSend = driver.findElement(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]"));
-        WebElement OkConfirm = driver.findElement(By.cssSelector("#confirmsavesend > div > div > div.flex-box.flex-end > button"));
+        //WebElement OkConfirm = driver.findElement(By.xpath("//*[@id=\\\"confirmsavesend\\\"]/div/div/div[3]/button"));
 
         FormTitle.sendKeys("Automated Test | Formulaire ASR KNE");
         FlightNumber.sendKeys("AFR345");
@@ -73,16 +73,16 @@ public class FormKneAsrPortalFilling {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("DATE")));
         driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[6]/td[2]/a[1]")).click();
 
-        ScheduleUTC.sendKeys("1010");
-        ActualUTC.sendKeys("1010");
-        MaxFdp.sendKeys("1010");
+        ScheduleUTC.sendKeys("1011");
+        ActualUTC.sendKeys("1011");
+        MaxFdp.sendKeys("1011");
         SaveSend.click();
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]")));
         OkPreSend.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#confirmsavesend > div > div > div.flex-box.flex-end > button")));
-        OkConfirm.click();
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"confirmsavesend\"]/div/div/div[3]/button")));
+        //OkConfirm.click();
 
     }
 

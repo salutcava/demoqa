@@ -23,10 +23,10 @@ public class FormKneAsrCubeCheck {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root[1]/app-login[1]/div[1]/div[1]/div[1]/img[1]")));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("html > body > app-root > app-login > div > div > div > img")));
 
-        driver.findElement(By.id("username")).sendKeys("safety-line");
-        driver.findElement(By.id("password")).sendKeys("Telemark_64");
+        driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
+        driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
         System.out.println("i_click_on_the_login_button");
-        driver.findElement(By.id("btnLogin")).click();
+        driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button[1]")).click();
 
         if(driver.getCurrentUrl().contains("home")){
              Assert.assertTrue("Nous sommes bien sur la bonne page",driver.getCurrentUrl().contains("home"));
@@ -38,24 +38,24 @@ public class FormKneAsrCubeCheck {
     @Then("^I open the safety occurences$")
     public void openSafetyOccurence() {
 
-        System.out.println("Filling the data");
+        System.out.println("Going to the sent form");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
         WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
-        WebElement SafetyOccurence = driver.findElement(By.xpath("//*[@id=\"safety-occurrence-module\"]"));
-        WebElement FormOccurences = driver.findElement(By.xpath("//*[@id=\"52\"]"));
-        WebElement OccurenceLine = driver.findElement(By.xpath("//span[contains(text(), '01:01-Automated Test | Formulaire ASR KNE')"));
-
         BurgerMenu.click();
+        System.out.println("clicked on BurgerMenu");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"safety-occurrence-module\"]")));
+        WebElement SafetyOccurence = driver.findElement(By.xpath("//*[@id=\"safety-occurrence-module\"]"));
         SafetyOccurence.click();
-        FormOccurences.click();
+        System.out.println("Clicked on SafetyOccurence");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
+        WebElement OccurenceLine = driver.findElement(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]"));
         OccurenceLine.click();
-
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]")));
-
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#confirmsavesend > div > div > div.flex-box.flex-end > button")));
+        System.out.println("Clicked on OccurenceLine");
     }
 
 }
