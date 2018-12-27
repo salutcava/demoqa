@@ -1,5 +1,3 @@
-import cucumber.api.java.After;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
@@ -13,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FormKneAsrCubeCheck {
     private static WebDriver driver;
 
-    @Given("^I am logged in for checking the form$")
+   @Given("^I am logged in for checking the form$")
     public void kne_cube() {
         // a voir comment factoriser ce bout là..
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olivier\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -37,57 +35,27 @@ public class FormKneAsrCubeCheck {
         SaveScreenshot.capture("i-check-the-url", driver);
     }
 
-    @And("^I open the menu$")
-    public void iOpenTheMenu() {
-        System.out.println("Opening Menu");
+    @Then("^I open the safety occurences$")
+    public void openSafetyOccurence() {
+
+        System.out.println("Going to the sent form");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
         WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
         BurgerMenu.click();
-
-        System.out.println("clicked on Burger Menu");
-    }
-
-    @Then("^I open safety occurence$")
-    public void iOpenSafetyOccurence() {
-        System.out.println("Opening Safety Occurence!");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        System.out.println("clicked on BurgerMenu");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"safety-occurrence-module\"]")));
         WebElement SafetyOccurence = driver.findElement(By.xpath("//*[@id=\"safety-occurrence-module\"]"));
         SafetyOccurence.click();
-
-        System.out.println("Clicked on Safety Occurence");
-    }
-
-    @And("^I open the form$")
-    public void iOpenTheForm() {
-        System.out.println("I open the form");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        System.out.println("Clicked on SafetyOccurence");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
         WebElement OccurenceLine = driver.findElement(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]"));
-
         OccurenceLine.click();
-
-        System.out.println("Clicked on occurence line to open the form");
-    }
-
-    @Then("^I check the data filled$")
-    public void iCheckTheDataFilled() {
-        System.out.println("I check the data");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-    }
-
-    @After
-    public void FormKneAsrCubeCheckAfter(){
-        //driver.close);
-        System.out.println("the end");
+        System.out.println("Clicked on OccurenceLine");
     }
 
 }
