@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="TestRunner" time="0.009" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="TestRunner" time="0.015" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="cucumber.options" value="--tags @cubekneasrcheck"/>
+    <property name="cucumber.options" value="--tags @portalkneasrfill"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
     <property name="java.vm.version" value="25.191-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -47,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @cubekneasrcheck"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @portalkneasrfill"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="fr"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -66,7 +66,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Check KNE ASR form from cube" name="Given I am logged in for checking the form" time="0.009"/>
-  <testcase classname="Scenario: Check KNE ASR form from cube" name="Then I open the safety occurences" time="0"/>
-  <testcase classname="Scenario: Check KNE ASR form from cube" name="Scenario: Check KNE ASR form from cube" time="0"/>
+  <testcase classname="Scenario: Fill KNE_ASR form" name="Given i am logged in for filling the form" time="0.005"/>
+  <testcase classname="Scenario: Fill KNE_ASR form" name="Then open filled form" time="0"/>
+  <testcase classname="Scenario: Fill KNE_ASR form" name="And the user fills the form" time="0"/>
+  <testcase classname="Scenario: Fill KNE_ASR form" name="Then the user posts the form" time="0.001"/>
+  <testcase classname="Scenario: Fill KNE_ASR form" name="Scenario: Fill KNE_ASR form" time="0.009"/>
 </testsuite>
