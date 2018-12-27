@@ -2,17 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10b3c3d2-29c4-4f64-b418-ed754a40f2e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Olivier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/attachment/attachment-file.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227114901-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227115110-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227115620-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227115744-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227115847-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227144448-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227160120-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227160604-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227161112-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227161714-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227162220-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227163012-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227163411-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227164544-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227164653-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227164755-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227164842-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227165820-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227170117-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227170555-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227170848-i-check-the-url.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/screenshot/20181227171052-i-check-the-url.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -344,7 +368,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545926947805" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545927415423" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junitpdfreport_1_1_prerelease_20080220" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
