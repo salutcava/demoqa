@@ -1,284 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10b3c3d2-29c4-4f64-b418-ed754a40f2e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Olivier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/info_cukes_cucumber_java_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/jquery-1.8.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/html/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142039-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142040-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142043-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142514-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142515-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130142516-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144709-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144711-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144712-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144906-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144907-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130144908-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130150232-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130150233-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130150234-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130152333-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130152334-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130152335-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162101-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162102-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162351-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162352-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162353-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162435-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162436-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130162438-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130165840-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130165841-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170025-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170026-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170131-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170133-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170333-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170334-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170335-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170710-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170711-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170712-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170953-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170954-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130170955-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171140-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171141-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171142-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171356-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171357-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171358-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171703-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171705-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171853-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171854-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171855-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171956-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171957-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130171958-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172323-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172324-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172325-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172452-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172453-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172636-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172637-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172638-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172806-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172807-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172808-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172856-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130172857-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130173038-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130173039-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130173955-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130173956-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130173957-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174125-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174126-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174127-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174226-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174227-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174228-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174352-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174353-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174430-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174431-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130174432-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175013-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175014-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175141-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175142-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175143-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175253-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175254-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175255-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175457-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175458-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175459-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175814-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175815-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130175817-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130180452-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130180454-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130180820-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130180821-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181130180822-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101628-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101629-login-test-in-qa-safety-cube-master;a-successful-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101630-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101752-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101753-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101754-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101943-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101944-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203101945-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203103757-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203103759-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203103801-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203110217-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203110218-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203110220-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203110305-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203110307-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113101-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113102-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113103-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113827-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113828-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113829-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113953-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113954-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203113955-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203141525-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203141527-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203141625-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203141627-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154333-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154336-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154337-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154338-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154721-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154722-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154723-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203154725-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155605-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155606-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155607-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155609-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155747-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155749-kne-asr-form;fill-kne-asr-form.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155751-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181203155848-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181204170425-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181210144132-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181212155143-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214152304-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214153141-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214153242-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214153800-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214154210-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214165209-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170004-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170100-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170220-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170348-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170438-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170622-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214170725-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214171313-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214171421-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214171528-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214172127-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214172254-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214174319-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214174442-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181214174640-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217165859-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217170145-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217170805-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217171030-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217171221-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217171336-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217171621-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217172139-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217172219-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217172430-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217172736-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217172916-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217173452-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217173955-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217174520-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217174657-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217174743-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217175019-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217175204-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217175319-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217175709-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217175811-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181217180509-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181218100644-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181218161632-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181218162910-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181218163524-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220162358-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220174921-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220175007-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220175726-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220175946-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220180616-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181220180927-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221101249-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221101418-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221101651-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221105743-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221110109-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221110716-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221113635-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221114141-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221114255-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221114759-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221115529-kne-asr-form;a-successful-portal-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221115531-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221121353-login-test-in-qa-safety-cube-master;a-successful-portal-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221121357-login-test-in-qa-safety-cube-master;a-successful-portal-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221121400-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123054-login-test-in-qa-safety-cube-master;a-successful-portal-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123056-login-test-in-qa-safety-cube-master;a-successful-portal-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123058-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123601-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123602-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123707-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123708-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123821-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221123822-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221141850-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221141851-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221142026-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221142027-login-test-in-qa-safety-cube-master;a-successful-cube-login;;2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221142029-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221150329-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221151153-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221151604-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221151820-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221154717-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221154733-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221154753-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221154809-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221160858-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221161101-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221161141-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181221161249-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/usage" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner.class" afterDir="false" />
-    </list>
+    <list default="true" id="10b3c3d2-29c4-4f64-b418-ed754a40f2e7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -367,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -570,7 +293,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545843048345" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545844527428" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junitpdfreport_1_1_prerelease_20080220" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -687,7 +410,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-565" y="-1088" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49659863" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.23288591" />
@@ -899,7 +621,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
