@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -39,6 +40,12 @@
             <version>1.2.4</version>
         </dependency>
         <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>2.12.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.9.1</version>
@@ -59,7 +66,6 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -83,8 +89,11 @@
                                     <fileset dir="target/surefire-reports">
                                         <include name="**/*.xml"/>
                                     </fileset>
-                                    <report format="noframes" todir="report"/>
+                                    <report styledir="etc" format="noframes" todir="report/"/>
                                 </junitreport>
+                                <move
+                                    file="report/junit-noframes.html"
+                                    tofile="report/report.html" />
                             </tasks>
                         </configuration>
                         <goals>
@@ -100,6 +109,22 @@
                     </dependency>
                 </dependencies>
             </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pdf-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>pdf</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>pdf</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>report/</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
         </plugins>
     </build>
 </project>
