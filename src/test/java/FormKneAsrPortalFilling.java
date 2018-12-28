@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FormKneAsrPortalFilling {
     public static WebDriver driver;
 
-    @Given("^i am logged in for filling the form$")
+    @Given("^I am logged in portalkneasrfill$")
     public void i_am_logged_in_for_filling_the_form() {
         // a voir comment factoriser ce bout là..
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olivier\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -36,8 +36,8 @@ public class FormKneAsrPortalFilling {
         SaveScreenshot.capture("i-check-the-url", driver);
     }
 
-    @Then("^open filled form$")
-    public void openForm() {
+    @Then("^I open the form portalkneasrfill$")
+    public void IOpenForm() {
         System.out.println("Click on the form we are testing : ASR");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -45,13 +45,14 @@ public class FormKneAsrPortalFilling {
         driver.findElement(By.xpath("//*[@id=\"form_52\"]")).click();
     }
 
-    @And("^the user fills the form$")
+    @And("^I fill the form portalkneasrfill$")
     public void fill_form_filling() {
         System.out.println("Filling the data");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
 
+        // General information
         WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
         FormTitle.sendKeys("Automated Test | Formulaire ASR KNE");
 
@@ -79,6 +80,7 @@ public class FormKneAsrPortalFilling {
         WebElement Commander = driver.findElement(By.xpath("//*[@id=\"chr_1_6\"]"));
         Commander.sendKeys("Commander Value");
 
+        // Crew concerned by the discretion
         WebElement CrewConcernedByTheDiscretion = driver.findElement(By.xpath("//*[@id=\"txt_2_1\"]"));
         CrewConcernedByTheDiscretion.sendKeys("Crew concerned by the discretion. Nam mattis, ligula non dictum rutrum, ante felis ornare libero, sit amet blandit est tellus sit amet quam.");
 
@@ -100,10 +102,6 @@ public class FormKneAsrPortalFilling {
 
         WebElement UTCScheduleBlockIn = driver.findElement(By.xpath("//*[@id=\"chr_3_11\"]"));
         UTCScheduleBlockIn.sendKeys("2222");
-
-        /*WebElement UTCScheduleFDPDuration = driver.findElement(By.xpath("//*[@id=\"chr_3_14\"]"));
-        UTCScheduleFDPDuration.sendKeys("1111");*/
-
 
         // Voyage details - Max FDP
         WebElement MostRectMaxFdp = driver.findElement(By.xpath("//*[@id=\"max_fdp\"]"));
@@ -154,6 +152,13 @@ public class FormKneAsrPortalFilling {
         // Captain's report
         WebElement CaptainReport = driver.findElement(By.xpath("//*[@id=\"txt_4_1\"]"));
         CaptainReport.sendKeys("Captain's report. Nam mattis, ligula non dictum rutrum, ante felis ornare libero, sit amet blandit est tellus sit amet quam.");
+    }
+
+    @Then("^I post the form portalkneasrfill$")
+    public void post_form_filling() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        System.out.println("Sendind the form");
 
         // Send form
         WebElement SaveSend = driver.findElement(By.xpath("/html/body/app-root/ng-component/app-report-create/main/section/div/div/button[3]"));
@@ -168,10 +173,7 @@ public class FormKneAsrPortalFilling {
         wait.until(ExpectedConditions.visibilityOf(OkConfirm));
         wait.until(ExpectedConditions.elementToBeClickable(OkConfirm));
         OkConfirm.click();
-    }
 
-    @Then("^the user posts the form$")
-    public void post_form_filling() {
-        System.out.println("Sendind the form");
+        System.out.println("Opening the occurence");
     }
 }
