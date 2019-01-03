@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" name="TestRunner" package="" skipped="0" tests="9" time="0.011">
+  <testsuite errors="0" failures="0" name="TestRunner" package="" skipped="0" tests="9" time="0.006">
       <properties>
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="cucumber.options" value="--tags @cubekneasrcheck" />
+          <property name="cucumber.options" value="--tags @kneasrcheck" />
 
           <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin" />
 
@@ -92,7 +92,7 @@
 
           <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre" />
 
-          <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumber.options=--tags @cubekneasrcheck" />
+          <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumber.options=--tags @kneasrcheck" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
@@ -130,7 +130,7 @@
 
       </properties>
 
-      <testcase classname="Scenario: Check KNE ASR form from cube" name="Given I am logged in cubekneasrcheck" time="0.008" />
+      <testcase classname="Scenario: Check KNE ASR form from cube" name="Given I am logged in cubekneasrcheck" time="0.005" />
 
       <testcase classname="Scenario: Check KNE ASR form from cube" name="And I open the menu cubekneasrcheck" time="0" />
 
@@ -146,7 +146,7 @@
 
       <testcase classname="Scenario: Check KNE ASR form from cube" name="And I check the data filled in captain&apos;s report cubekneasrcheck" time="0" />
 
-      <testcase classname="Scenario: Check KNE ASR form from cube" name="Scenario: Check KNE ASR form from cube" time="0.003" />
+      <testcase classname="Scenario: Check KNE ASR form from cube" name="Scenario: Check KNE ASR form from cube" time="0.001" />
 
   </testsuite>
 </testsuites>

@@ -1,6 +1,6 @@
-Feature: KNE_ASR Form
+Feature: KNE_ASR Form checking in cube as 'safety-line'
 
-  @cubekneasrcheck
+  @kneasrcheck
 
   Scenario: Check KNE ASR form from cube
     Given I am logged in cubekneasrcheck

@@ -1,6 +1,6 @@
-Feature: KNE_ASR Form
+Feature: KNE_ASR Form filling in portal as 'safety-line'
 
-  @portalkneasrfill
+  @kneasrfill
 
   Scenario: Fill KNE_ASR form
     Given I am logged in portalkneasrfill

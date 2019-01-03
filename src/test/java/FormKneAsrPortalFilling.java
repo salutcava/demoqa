@@ -1,3 +1,6 @@
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,12 +13,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FormKneAsrPortalFilling {
-    public static WebDriver driver;
+
+    private static WebDriver driver;
+    private static ExtentReports extent;
+    private static ExtentHtmlReporter htmlReporter;
+    private static ExtentTest test;
 
     @Given("^I am logged in portalkneasrfill$")
     public void i_am_logged_in_for_filling_the_form() {
         // a voir comment factoriser ce bout là..
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olivier\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTER/");
 
@@ -32,8 +39,8 @@ public class FormKneAsrPortalFilling {
         if(driver.getCurrentUrl().contains("home")){
             Assert.assertTrue("Nous sommes bien sur la bonne page",driver.getCurrentUrl().contains("cube"));
             driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTER/");
+            test.pass("Login Successful");
         }
-        SaveScreenshot.capture("i-check-the-url", driver);
     }
 
     @Then("^I open the form portalkneasrfill$")
@@ -74,7 +81,7 @@ public class FormKneAsrPortalFilling {
         WebElement Date = driver.findElement(By.xpath("//*[@id=\"DATE\"]"));
         Date.click();
 
-        WebElement DateSelectDate = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[6]/td[2]/a[1]"));
+        WebElement DateSelectDate = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[3]/td[4]/a[1]"));
         DateSelectDate.click();
 
         WebElement Commander = driver.findElement(By.xpath("//*[@id=\"chr_1_6\"]"));

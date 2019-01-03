@@ -2,45 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10b3c3d2-29c4-4f64-b418-ed754a40f2e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vimalselvam_cucumber_extentsreport_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/extent-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Olivier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Olivier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automatedtests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/automatedtests.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227114901-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227115110-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227115620-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227115744-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227115847-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227144448-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227160120-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227160604-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227161112-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227161714-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227162220-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227163012-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227163411-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227164544-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227164653-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227164755-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227164842-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227165820-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227170117-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227170555-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227170848-i-check-the-url.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/screenshot/20181227171052-i-check-the-url.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SaveScreenshot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SaveScreenshot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TESTS-TestSuites.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrCubeCheck.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FormKneAsrPortalFilling.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SafetyCubeLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SafetyCubeLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SafetyPortalLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,14 +95,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="1563" />
-          <entry key="JAVA" value="8068" />
+          <entry key="Cucumber" value="1622" />
+          <entry key="JAVA" value="9686" />
           <entry key="Markdown" value="362" />
           <entry key="PLAIN_TEXT" value="548" />
-          <entry key="Properties" value="162" />
+          <entry key="Properties" value="174" />
           <entry key="RegExp" value="1" />
           <entry key="Substeps" value="6" />
-          <entry key="XML" value="464" />
+          <entry key="XML" value="619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -114,13 +118,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cucumber" value="42" />
+          <entry key="Cucumber" value="48" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="63" />
+          <entry key="JAVA" value="81" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="11" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
     </session>
@@ -129,79 +133,57 @@
     <favorites_list name="automatedtests" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.425218">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/readme.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="272">
-                    <caret line="16" column="113" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="113" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="19" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="22" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="63" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SaveScreenshot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6836#6837#0" expanded="true" />
+                <element signature="e#6909#6910#0" expanded="true" />
+                <element signature="e#7039#7040#0" expanded="true" />
+                <element signature="e#7112#7113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="26" column="115" selection-start-line="26" selection-start-column="115" selection-end-line="26" selection-end-column="115" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -240,6 +222,11 @@
       <find>(\\d+)$&quot;)</find>
       <find>test6</find>
       <find>test6$&quot;)</find>
+      <find>testng</find>
+      <find>Succes</find>
+      <find>e</find>
+      <find>scree</find>
+      <find>Sample test runner output message</find>
     </findStrings>
     <replaceStrings>
       <replace>date</replace>
@@ -270,8 +257,6 @@
         <option value="$PROJECT_DIR$/src/test/java/RunCucumberTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/TakeScreenshot.java" />
         <option value="$PROJECT_DIR$/src/etc/junit-noframes.xsl" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" />
         <option value="$PROJECT_DIR$/etc/junit-noframes.xsl" />
         <option value="$PROJECT_DIR$/etc/testng.xsl" />
         <option value="$PROJECT_DIR$/src/test/java/NTE/NTE_DAMG_fr.java" />
@@ -289,15 +274,26 @@
         <option value="$PROJECT_DIR$/src/test/java/FormKneAsr.java" />
         <option value="$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/SafetyCubeLogin.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExtentReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExtentManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestListener.java" />
+        <option value="$PROJECT_DIR$/extent-config.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ExtentFactory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/extent-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/getScreenshot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/SaveScreenshot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java" />
+        <option value="$PROJECT_DIR$/config/extent-config.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java" />
       </list>
     </option>
   </component>
@@ -320,8 +316,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-398" />
-    <option name="y" value="-1047" />
+    <option name="x" value="-565" />
+    <option name="y" value="-1088" />
     <option name="width" value="1380" />
     <option name="height" value="745" />
   </component>
@@ -361,12 +357,32 @@
             <path>
               <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
               <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
               <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
@@ -399,7 +415,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546012772682" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546521556443" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junitpdfreport_1_1_prerelease_20080220" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -407,24 +423,24 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Cucumber" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\automatedtests\src\test\resources" />
-      <recent name="C:\automatedtests\src\test\java" />
-      <recent name="C:\automatedtests\src\test\resources\SafetyCube" />
-      <recent name="C:\automatedtests\src\test\resources\SafetyCube\NTE" />
-      <recent name="C:\automatedtests\" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="SafetyCube.NTE" />
       <recent name="SafetyCube" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\automatedtests\src\test\resources" />
       <recent name="C:\automatedtests\src\test\resources\NTE" />
       <recent name="C:\automatedtests\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\automatedtests\config" />
+      <recent name="C:\automatedtests" />
+      <recent name="C:\automatedtests\src\test\resources" />
+      <recent name="C:\automatedtests\src\test\java" />
+      <recent name="C:\automatedtests\src\test\resources\SafetyCube" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -516,6 +532,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-565" y="-1088" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49659863" visible="true" weight="0.20522387" />
       <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.23288591" />
@@ -531,10 +548,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4986577" visible="true" weight="0.36051503" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4986577" visible="true" weight="0.33583692" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.35384616" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32867134" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,6 +562,35 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
       <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="8" side_tool="true" weight="0.3295302" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49659863" visible="true" weight="0.20522387" />
+      <window_info id="Structure" order="1" sideWeight="0.5009709" side_tool="true" weight="0.23288591" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50340134" side_tool="true" weight="0.1988273" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4986577" visible="true" weight="0.33583692" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.35384616" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32832617" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3295302" />
+      <window_info anchor="right" x="0" y="0" width="337" height="648" id="Documentation" order="8" side_tool="true" weight="0.3295302" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -594,24 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SaveScreenshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/etc/junit-noframes.xsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="431" selection-start-line="431" selection-end-line="431" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -635,34 +667,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExtentReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyCubeLogin.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="422">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extent-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,10 +721,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/extent-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="51" column="99" lean-forward="true" selection-start-line="51" selection-start-column="99" selection-end-line="55" selection-end-column="58" />
+        <state relative-caret-position="272">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dazda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyCubeLogin.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyPortalLogin.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/getScreenshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" lean-forward="true" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -694,40 +793,81 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/FormKneAsrPortalFilling.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/FormKneAsrCubeCheck.feature">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SaveScreenshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+        <state relative-caret-position="85">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyPortalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="63" />
+        <state relative-caret-position="418">
+          <caret line="48" column="104" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="-24">
+          <caret line="26" column="115" selection-start-line="26" selection-start-column="115" selection-end-line="26" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExtentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExtentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-670">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/extent-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrPortalFilling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FormKneAsrCubeCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="214">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6836#6837#0" expanded="true" />
+            <element signature="e#6909#6910#0" expanded="true" />
+            <element signature="e#7039#7040#0" expanded="true" />
+            <element signature="e#7112#7113#0" expanded="true" />
           </folding>
         </state>
       </provider>
