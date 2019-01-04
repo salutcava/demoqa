@@ -24,8 +24,6 @@ public class SafetyPortalLogin {
         System.out.println("i_enter_my_username");
 
         driver.findElement(By.id("username")).sendKeys(username);
-
-        SaveScreenshot.capture(scenario.getId(), driver);
     }
 
     @And("^I enter my password '(.*?)' in portal$")
@@ -33,8 +31,6 @@ public class SafetyPortalLogin {
         System.out.println("i_enter_my_password");
 
         driver.findElement(By.id("password")).sendKeys(password);
-
-        SaveScreenshot.capture(scenario.getId(), driver);
     }
 
     @Then("^I click on the login button in portal$")
@@ -51,7 +47,5 @@ public class SafetyPortalLogin {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("logo-content")));
 
         Assert.assertTrue("Nous sommes bien sur la bonne page",driver.getCurrentUrl().contains("home"));
-
-        SaveScreenshot.capture("i-check-the-url", driver);
     }
 }

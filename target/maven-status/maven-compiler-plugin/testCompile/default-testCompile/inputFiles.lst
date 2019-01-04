@@ -1,5 +1,5 @@
-C:\automatedtests\src\test\java\TestRunner.java
-C:\automatedtests\src\test\java\SafetyCubeLogin.java
-C:\automatedtests\src\test\java\FormKneAsrCubeCheck.java
-C:\automatedtests\src\test\java\SafetyPortalLogin.java
-C:\automatedtests\src\test\java\FormKneAsrPortalFilling.java
+C:\dev\safetycube\src\test\java\SafetyPortalLogin.java
+C:\dev\safetycube\src\test\java\FormCubeKneAsrCheck.java
+C:\dev\safetycube\src\test\java\SafetyCubeLogin.java
+C:\dev\safetycube\src\test\java\FormPortalKneAsrFill.java
+C:\dev\safetycube\src\test\java\TestRunner.java
