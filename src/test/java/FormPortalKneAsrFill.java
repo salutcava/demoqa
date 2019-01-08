@@ -1,57 +1,71 @@
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.cucumber.listener.Reporter;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.IOException;
 
-public class FormKneAsrPortalFilling {
-    public static WebDriver driver;
+public class FormPortalKneAsrFill {
 
-    @Given("^i am logged in for filling the form$")
-    public void i_am_logged_in_for_filling_the_form() {
+    private static WebDriver driver;
+    private static ExtentReports extent;
+    private static ExtentHtmlReporter htmlReporter;
+    private static ExtentTest test;
+
+    @Given("^I am logged in formportalkneasrfill")
+    public void i_am_logged_in_for_filling_the_form() throws IOException {
         // a voir comment factoriser ce bout là..
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Olivier\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
         driver = new ChromeDriver();
-        driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTER/");
+        driver.get(Props.getProperty("server.safetycube.portal"));
+        driver.manage().window().maximize();
 
-        System.out.println("Exec a wait");
+        System.out.println("Waiting for the logo to appear");
+        Reporter.addStepLog("Waiting for the logo to appear");
+
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"form\"]/img[1]")));
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("form#form > img")));
 
         driver.findElement(By.id("username")).sendKeys("safety-line");
         driver.findElement(By.id("password")).sendKeys("Telemark_64");
-        System.out.println("i_click_on_the_login_button");
+
+        System.out.println("Click on the login button");
+        Reporter.addStepLog("Click on the login button");
+
         driver.findElement(By.id("btnLogin")).click();
 
         if(driver.getCurrentUrl().contains("home")){
-            Assert.assertTrue("Nous sommes bien sur la bonne page",driver.getCurrentUrl().contains("cube"));
-            driver.get("http://192.168.31.77/QA-SAFETYCUBE-MASTER/");
+            Reporter.addStepLog("Successful login. The URL is good : " + driver.getCurrentUrl());
         }
-        SaveScreenshot.capture("i-check-the-url", driver);
     }
 
-    @Then("^open filled form$")
-    public void openForm() {
-        System.out.println("Click on the form we are testing : ASR");
+    @Then("^I open the form formportalkneasrfill")
+    public void IOpenForm() throws IOException {
+        System.out.println("Selecting the form : ASR #form_52");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form_52")));
-        driver.findElement(By.xpath("//*[@id=\"form_52\"]")).click();
+
+        WebElement FormButton = driver.findElement(By.xpath("//*[@id=\"form_52\"]"));
+        FormButton.click();
     }
 
-    @And("^the user fills the form$")
-    public void fill_form_filling() {
-        System.out.println("Filling the data");
+    @And("^I fill the form formportalkneasrfill")
+    public void fill_form_filling() throws IOException {
+        System.out.println("Filling the form with data and an attached file");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
 
+        // General information
         WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
         FormTitle.sendKeys("Automated Test | Formulaire ASR KNE");
 
@@ -73,12 +87,13 @@ public class FormKneAsrPortalFilling {
         WebElement Date = driver.findElement(By.xpath("//*[@id=\"DATE\"]"));
         Date.click();
 
-        WebElement DateSelectDate = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[6]/td[2]/a[1]"));
+        WebElement DateSelectDate = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[3]/td[4]/a[1]"));
         DateSelectDate.click();
 
         WebElement Commander = driver.findElement(By.xpath("//*[@id=\"chr_1_6\"]"));
         Commander.sendKeys("Commander Value");
 
+        // Crew concerned by the discretion
         WebElement CrewConcernedByTheDiscretion = driver.findElement(By.xpath("//*[@id=\"txt_2_1\"]"));
         CrewConcernedByTheDiscretion.sendKeys("Crew concerned by the discretion. Nam mattis, ligula non dictum rutrum, ante felis ornare libero, sit amet blandit est tellus sit amet quam.");
 
@@ -100,10 +115,6 @@ public class FormKneAsrPortalFilling {
 
         WebElement UTCScheduleBlockIn = driver.findElement(By.xpath("//*[@id=\"chr_3_11\"]"));
         UTCScheduleBlockIn.sendKeys("2222");
-
-        /*WebElement UTCScheduleFDPDuration = driver.findElement(By.xpath("//*[@id=\"chr_3_14\"]"));
-        UTCScheduleFDPDuration.sendKeys("1111");*/
-
 
         // Voyage details - Max FDP
         WebElement MostRectMaxFdp = driver.findElement(By.xpath("//*[@id=\"max_fdp\"]"));
@@ -155,6 +166,15 @@ public class FormKneAsrPortalFilling {
         WebElement CaptainReport = driver.findElement(By.xpath("//*[@id=\"txt_4_1\"]"));
         CaptainReport.sendKeys("Captain's report. Nam mattis, ligula non dictum rutrum, ante felis ornare libero, sit amet blandit est tellus sit amet quam.");
 
+        Reporter.addStepLog("Filling the form with data and an attached file");
+    }
+
+    @Then("^I post the form formportalkneasrfill")
+    public void post_form_filling() throws IOException {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+
+        System.out.println("Posting the form");
+
         // Send form
         WebElement SaveSend = driver.findElement(By.xpath("/html/body/app-root/ng-component/app-report-create/main/section/div/div/button[3]"));
         SaveSend.click();
@@ -168,10 +188,7 @@ public class FormKneAsrPortalFilling {
         wait.until(ExpectedConditions.visibilityOf(OkConfirm));
         wait.until(ExpectedConditions.elementToBeClickable(OkConfirm));
         OkConfirm.click();
-    }
 
-    @Then("^the user posts the form$")
-    public void post_form_filling() {
-        System.out.println("Sendind the form");
+        Reporter.addStepLog("Posting the form");
     }
 }

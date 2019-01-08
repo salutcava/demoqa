@@ -25,8 +25,6 @@ public class SafetyCubeLogin {
 
 
         driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys(username);
-
-        SaveScreenshot.capture(scenario.getId(), driver);
     }
 
     @And("^I enter my password '(.*?)' in cube$")
@@ -34,8 +32,6 @@ public class SafetyCubeLogin {
         System.out.println("i_enter_my_password");
 
         driver.findElement(By.xpath("/html/body/app-root[1]/app-login[1]/div[1]/div[1]/div[1]/form[1]/input[2]")).sendKeys(password);
-
-        SaveScreenshot.capture(scenario.getId(), driver);
     }
 
     @Then("^I click on the login button in cube$")
@@ -52,8 +48,6 @@ public class SafetyCubeLogin {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"logo\"]/img")));
 
         Assert.assertTrue("Nous sommes bien sur la bonne page",driver.getCurrentUrl().contains("cube"));
-
-        SaveScreenshot.capture("i-check-the-url", driver);
     }
 
     @AfterClass

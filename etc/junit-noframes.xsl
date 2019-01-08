@@ -200,7 +200,7 @@
     <!-- ================================================================== -->
     <!-- Write a package level report                                       -->
     <!-- It creates a table with values from the document:                  -->
-    <!-- Name | Tests | Errors | Failures | Time                            -->
+    <!-- Name | Tests | Errors | Failures | App                            -->
     <!-- ================================================================== -->
     <xsl:template name="packages">
         <!-- create an anchor to this package name -->
@@ -268,7 +268,7 @@
             <th>Errors</th>
             <th>Skipped</th>
             <th>Success rate</th>
-            <th>Time</th>
+            <th>App</th>
         </tr>
         <tr valign="top">
             <xsl:attribute name="class">
@@ -335,7 +335,7 @@
         <th>Errors</th>
         <th>Failures</th>
         <th>Skipped</th>
-        <th nowrap="nowrap">Time(s)</th>
+        <th nowrap="nowrap">App(s)</th>
     </tr>
 </xsl:template>
 
@@ -347,8 +347,8 @@
         <th>Errors</th>
         <th>Failures</th>
         <th>Skipped</th>
-        <th nowrap="nowrap">Time(s)</th>
-        <th nowrap="nowrap">Time Stamp</th>
+        <th nowrap="nowrap">App(s)</th>
+        <th nowrap="nowrap">App Stamp</th>
         <th>Host</th>
     </tr>
 </xsl:template>
@@ -359,7 +359,7 @@
         <th>Name</th>
         <th>Status</th>
         <th width="70%">Type</th>
-        <th nowrap="nowrap">Time(s)</th>
+        <th nowrap="nowrap">App(s)</th>
         <th>Screenshot</th>
     </tr>
 </xsl:template>
