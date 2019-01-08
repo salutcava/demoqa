@@ -17,10 +17,11 @@ import java.io.File;
 public class TestRunner {
     @AfterClass
     public static void setup() {
-        Reporter.loadXMLConfig(new File("config/extent-config.xml"));
-        Reporter.setSystemInfo("user", System.getProperty("user.name"));
-        Reporter.setSystemInfo("os", System.getProperty("os.name"));
-        Reporter.setTestRunnerOutput("Sample test runner output message");
+        Reporter.loadXMLConfig(new File("./config/extent-config.xml"));
+        Reporter.setSystemInfo("User", System.getProperty("user.name"));
+        Reporter.setSystemInfo("OS", System.getProperty("os.name"));
+        Reporter.setSystemInfo("Java", System.getProperty("java.version"));
+        Reporter.setSystemInfo("Apache Maven", "3.6.0");
+        Reporter.setTestRunnerOutput("Before yesterday, Catherine was 17 years old. Next year, she will be 20 years old. How can it be possible ?");
     }
-
 }

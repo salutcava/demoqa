@@ -25,10 +25,12 @@
         <!-- custom javascript -->
         <scripts>
             <![CDATA[
-        $(document).ready(function() {
-
-        });
-      ]]>
+            $(document).ready(function() {
+                $(".brand-logo").empty();
+                //$(".brand-logo").append("<img src=\"../media/img/logo-safetyline.png\" />");
+                $(".brand-logo").append("Report");
+            });
+          ]]>
         </scripts>
 
         <!-- custom styles -->
