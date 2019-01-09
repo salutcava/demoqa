@@ -9,6 +9,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,6 +25,7 @@ public class FormCubeKneAsrCheck{
     private static ExtentHtmlReporter htmlReports;
     private static ExtentReports extent;
     private static ExtentTest test;
+    private static JavascriptExecutor js = (JavascriptExecutor) driver;
 
     Properties prop = new Properties();
     OutputStream output = null;
@@ -136,6 +138,11 @@ public class FormCubeKneAsrCheck{
         WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
         String FormTitleText = FormTitle.getAttribute("value");
 
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        WebElement ManagementReport = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/span/h2"));
+        js.executeScript("arguments[0].scrollIntoView();", ManagementReport);
+
         if(FormTitleText.contains("Automated Test | Formulaire ASR KNE")){
             System.out.println("FormTitleText.contains > Automated Test | Formulaire ASR KNE");
             Reporter.addStepLog("Occurence title should contains : Automated Test | Formulaire ASR KNE");
@@ -183,7 +190,7 @@ public class FormCubeKneAsrCheck{
 
     @After
     public void FormKneAsrCubeCheckAfter() {
-        driver.close();
+        //driver.close();
         System.out.println("the end");
     }
 }
