@@ -26,9 +26,13 @@
         <scripts>
             <![CDATA[
             $(document).ready(function() {
-                $(".brand-logo").empty();
-                //$(".brand-logo").append("<img src=\"../media/img/logo-safetyline.png\" />");
-                $(".brand-logo").append("Report");
+                $('.brand-logo.blue.darken-3').empty();
+                $('.brand-logo.blue.darken-3').append('<img src=\"../media/img/logo-safetyline.jpg\" />');
+                $('.brand-logo.blue.darken-3').addClass('white');
+                $('.brand-logo.blue.darken-3').css('width','auto');
+                $('.brand-logo.white.blue.darken-3').removeClass('blue');
+                $('.brand-logo.white.darken-3').removeClass('darken-3');
+                $('.brand-logo.white img').addClass('logo-vieroli');
             });
           ]]>
         </scripts>
@@ -36,8 +40,12 @@
         <!-- custom styles -->
         <styles>
             <![CDATA[
-
-      ]]>
+                .logo-vieroli{
+                    height: 30px;
+                    padding-right: 20px;
+                    padding-top: 15px;
+                }
+            ]]>
         </styles>
     </configuration>
 </extentreports>
