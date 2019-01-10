@@ -1,10 +1,8 @@
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.cucumber.listener.Reporter;
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -19,6 +17,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Properties;
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.*;
+
 public class FormCubeKneAsrCheck{
 
     private static WebDriver driver;
@@ -31,7 +32,7 @@ public class FormCubeKneAsrCheck{
     OutputStream output = null;
 
     @Given("^I am logged in formcubekneasrcheck")
-    public void kne_cube() throws IOException {
+    public void kne_cube() throws IOException, InterruptedException {
         // a voir comment factoriser ce bout là..
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
         driver = new ChromeDriver();
@@ -39,9 +40,11 @@ public class FormCubeKneAsrCheck{
         driver.get(Props.getProperty("server.safetycube.cube"));
 
         System.out.println("Exec a wait");
+
         WebDriverWait wait = new WebDriverWait(driver, 30);
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root[1]/app-login[1]/div[1]/div[1]/div[1]/img[1]")));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("html > body > app-root > app-login > div > div > div > img")));
+
+        WebElement logo = driver.findElement(By.cssSelector("html > body > app-root > app-login > div > div > div > img"));
 
         driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
         driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
@@ -59,19 +62,19 @@ public class FormCubeKneAsrCheck{
             Reporter.addStepLog("The URL should contain : \"dashboard\".");
             Reporter.addStepLog("The URL is : " +driver.getCurrentUrl());
 
-            SaveScreenshot.screenshot(driver, "loggedin");
+            SaveScreenshot.screenshot(driver, "loggedin", logo);
             Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "loggedin.png");
         }else{
             Reporter.addStepLog("The URL should contain : \"dashboard\".");
             Reporter.addStepLog("The URL is : " +driver.getCurrentUrl());
 
-            SaveScreenshot.screenshot(driver, "notloggedin");
+            SaveScreenshot.screenshot(driver, "notloggedin", logo);
             Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "notloggedin.png");
         }
     }
 
     @And("^I open the menu formcubekneasrcheck")
-    public void iOpenTheMenu() throws IOException  {
+    public void iOpenTheMenu() throws IOException, InterruptedException {
         System.out.println("Opening Menu");
         Reporter.addStepLog("Opening Menu");
 
@@ -84,12 +87,12 @@ public class FormCubeKneAsrCheck{
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"safety-occurrence-module\"]")));
 
-        SaveScreenshot.screenshot(driver, "openmenu");
+        SaveScreenshot.screenshot(driver, "openmenu",BurgerMenu);
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openmenu.png");
     }
 
     @Then("^I open safety occurence formcubekneasrcheck")
-    public void iOpenSafetyOccurence() throws IOException  {
+    public void iOpenSafetyOccurence() throws IOException, InterruptedException {
         System.out.println("Opening Safety Occurence!");
         Reporter.addStepLog("Opening Safety Occurence");
 
@@ -100,12 +103,12 @@ public class FormCubeKneAsrCheck{
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
 
-        SaveScreenshot.screenshot(driver, "opensafetyoccurence");
+        SaveScreenshot.screenshot(driver, "opensafetyoccurence",SafetyOccurence);
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "opensafetyoccurence.png");
     }
 
     @And("^I open the form formcubekneasrcheck")
-    public void iOpenTheForm() throws IOException  {
+    public void iOpenTheForm() throws IOException, InterruptedException {
         System.out.println("I open the form");
         Reporter.addStepLog("I open the form");
 
@@ -117,51 +120,85 @@ public class FormCubeKneAsrCheck{
         OccurenceLine.click();
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
-        SaveScreenshot.screenshot(driver, "openform");
+        SaveScreenshot.screenshot(driver, "openform", OccurenceLine);
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openform.png");
 
         System.out.println("Clicked on occurence line to open the form");
     }
 
     @Then("^I check the data filled in general information formcubekneasrcheck")
-    public void iCheckTheDataFilledInGeneralInformation() throws IOException {
+    public void iCheckTheDataFilledInGeneralInformation() throws IOException, InterruptedException {
         System.out.println("General information check");
         Reporter.addStepLog("General information check");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
-
-        SaveScreenshot.screenshot(driver, "generalinformationcheck");
-        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "generalinformationcheck.png");
-
-        // General information
-        WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
-        String FormTitleText = FormTitle.getAttribute("value");
-
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        WebElement ManagementReport = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/span/h2"));
-        js.executeScript("arguments[0].scrollIntoView();", ManagementReport);
 
-        if(FormTitleText.contains("Automated Test | Formulaire ASR KNE")){
-            System.out.println("FormTitleText.contains > Automated Test | Formulaire ASR KNE");
+        // General information
+        // Title
+        WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
+        String FormTitleValue = FormTitle.getAttribute("value");
+
+        js.executeScript("arguments[0].scrollIntoView();", FormTitle);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
+
+        SaveScreenshot.screenshot(driver, "generalinformationcheck",FormTitle);
+        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "generalinformationcheck.png");
+
+        if(FormTitleValue.contains("Automated Test | Formulaire ASR KNE")){
+            System.out.println("Title should contains > Automated Test | Formulaire ASR KNE");
             Reporter.addStepLog("Occurence title should contains : Automated Test | Formulaire ASR KNE");
-            Reporter.addStepLog("Occurence title : " + FormTitleText);
+            Reporter.addStepLog("Occurence title : " + FormTitleValue);
         }else{
-            System.out.println("FormTitleText.contains > Automated Test | Formulaire ASR KNE");
+            System.out.println("Title should contains > Automated Test | Formulaire ASR KNE");
             Reporter.addStepLog("Occurence title should contains : Automated Test | Formulaire ASR KNE");
-            Reporter.addStepLog("Occurence title : " + FormTitleText);
+            Reporter.addStepLog("Occurence title : " + FormTitleValue);
         }
 
-        System.out.println(FormTitleText);
+        System.out.println("Title check");
 
-//        Reporter.addStepLog("This is not the right form");
-//        WebElement FlightNumber = driver.findElement(By.id("chr_1_2"));
-//
-//        WebElement AirCraftType = driver.findElement(By.id("chr_1_4"));
-//
-//        WebElement AirCraftTypeSelectOption = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/div[4]/div[1]/div[2]/div/div/ul/li[2]"));
-//
+        // Flight number
+        WebElement FlightNumber = driver.findElement(By.id("chr_1_2"));
+        String FlightNumberValue = FlightNumber.getAttribute("value");
+
+        js.executeScript("arguments[0].scrollIntoView();", FlightNumber);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_2")));
+
+        SaveScreenshot.screenshot(driver, "flightnumber",FlightNumber);
+        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "flightnumber.png");
+
+        if(FlightNumberValue.contentEquals("AFR345")){
+            Reporter.addStepLog("Flight number should be : AFR345");
+            Reporter.addStepLog("Flight number : " + FlightNumberValue);
+        }else{
+            Reporter.addStepLog("Flight number should be : AFR345");
+            Reporter.addStepLog("Flight number : " + FlightNumberValue);
+        }
+
+        // Aircraft type
+        WebElement AirCraftType = driver.findElement(By.id("chr_1_4"));
+        WebElement AirCraftTypeSelectOption = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/div[4]/div[1]/div[2]/div/div/ul/li[2]"));
+        String AirCraftTypeSelectOptionText = AirCraftTypeSelectOption.getAttribute("innerHTML");
+
+        js.executeScript("arguments[0].scrollIntoView();", AirCraftType);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_4")));
+
+        SaveScreenshot.screenshot(driver, "aircrafttypevalue", AirCraftType);
+        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "aircrafttypevalue.png");
+
+
+        if(AirCraftTypeSelectOptionText.contentEquals("A330-300")){
+            Reporter.addStepLog("Aircraft type should be : A330-300");
+            Reporter.addStepLog("Aircraft type is : " + AirCraftTypeSelectOptionText);
+        }else{
+            Reporter.addStepLog("Aircraft type should be : A330-300");
+            Reporter.addStepLog("Aircraft type is : " + AirCraftTypeSelectOptionText);
+            assertThat(AirCraftTypeSelectOptionText, containsString("A330-300"));
+        }
+
+
 //        WebElement Immatriculation = driver.findElement(By.xpath("//*[@id=\"IMMAT\"]"));
 //
 //        WebElement ImmatriculationSelectOption = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/div[4]/div[1]/div[3]/div[1]/div[1]/ul[1]/li[6]"));
