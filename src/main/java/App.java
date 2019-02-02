@@ -24,7 +24,7 @@ public class App {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].classList.add('selenium-highlight');",element);
 
-        TimeUnit.SECONDS.sleep(0);
+        TimeUnit.MILLISECONDS.sleep(500);
 
         rmhighlight(driver,element);
     }

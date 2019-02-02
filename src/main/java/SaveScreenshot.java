@@ -17,7 +17,6 @@ public class SaveScreenshot {
         // Get the screenshot as an image File
         File src = screenshot.getScreenshotAs(OutputType.FILE);
 
-        App.highlight(driver, element);
 
         try {
             // Specify the destination where the image will be saved

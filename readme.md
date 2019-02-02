@@ -24,3 +24,6 @@ Do not forget to use "Scenario Outline" instead of simply "Scenario"
 **Extent report**
 Config file is at **`./config/extent-config.xml`**
 From this file, you can customize the report, with javascript and css
+
+###Screenshots
+---

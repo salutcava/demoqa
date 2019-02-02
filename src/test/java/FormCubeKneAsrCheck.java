@@ -86,7 +86,7 @@ public class FormCubeKneAsrCheck{
         BurgerMenu.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"safety-occurrence-module\"]")));
-
+        //App.highlight(BurgerMenu);
         SaveScreenshot.screenshot(driver, "openmenu",BurgerMenu);
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openmenu.png");
     }
@@ -185,6 +185,8 @@ public class FormCubeKneAsrCheck{
         js.executeScript("arguments[0].scrollIntoView();", AirCraftType);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_4")));
 
+        App.highlight(driver,AirCraftTypeSelectOption);
+
         SaveScreenshot.screenshot(driver, "aircrafttypevalue", AirCraftType);
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "aircrafttypevalue.png");
 
@@ -227,7 +229,7 @@ public class FormCubeKneAsrCheck{
 
     @After
     public void FormKneAsrCubeCheckAfter() {
-        //driver.close();
+        driver.close();
         System.out.println("the end");
     }
 }
