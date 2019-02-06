@@ -1,7 +1,5 @@
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.cucumber.listener.Reporter;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,35 +14,18 @@ import java.io.IOException;
 public class FormPortalKneAsrFill {
 
     private static WebDriver driver;
-    private static ExtentReports extent;
-    private static ExtentHtmlReporter htmlReporter;
-    private static ExtentTest test;
+
+    @After
+    public void AfterFormPortalKneAsrFill(){
+        System.out.println("Closing AfterFormPortalKneAsrFill");
+        App.close(driver);
+    }
 
     @Given("^I am logged in formportalkneasrfill")
     public void i_am_logged_in_for_filling_the_form() throws IOException {
-        // a voir comment factoriser ce bout là..
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-        driver = new ChromeDriver();
-        driver.get(Props.getProperty("server.safetycube.portal"));
-        driver.manage().window().maximize();
-
-        System.out.println("Waiting for the logo to appear");
-        Reporter.addStepLog("Waiting for the logo to appear");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"form\"]/img[1]")));
-
-        driver.findElement(By.id("username")).sendKeys("safety-line");
-        driver.findElement(By.id("password")).sendKeys("Telemark_64");
-
-        System.out.println("Click on the login button");
-        Reporter.addStepLog("Click on the login button");
-
-        driver.findElement(By.id("btnLogin")).click();
-
-        if(driver.getCurrentUrl().contains("home")){
-            Reporter.addStepLog("Successful login. The URL is good : " + driver.getCurrentUrl());
-        }
+        WebDriver driver = new ChromeDriver();
+        Login.login_portal(driver);
     }
 
     @Then("^I open the form formportalkneasrfill")

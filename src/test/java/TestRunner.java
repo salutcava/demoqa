@@ -8,7 +8,7 @@ import java.io.File;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //features = {"src/test/resources"},
+        //risk-assessment = {"src/test/resources"},
         //glue = {"com.cucumber.stepdefinitions"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:report/extent-report.html"},
         tags = {"~@successfulportallogin, ~@successfulcubelogin"}
