@@ -1,41 +1,78 @@
-é# Automated test for Safety Cube
 
-**Tests are made for french language**
+# Automated test for Safety Cube
+
+***Tests are made for french language***
+
+ - [Installation](#installation)
+ - [Tests screnarios](#testscenarios)
+ - [Extent report](#extentreport)
+ - [Screenshot](#screenshot)
+ - [Project structure](#projectstructure)
+ - [Logs and reporter logs](#logsandreporterlogs)
+ - [Useful functions](#usefulfunctions)
+ 
+---
+
+## Installation
+Checkout the project by using git :
+
+    git clone http://192.168.31.22:9090/olivierlam/SafetyCube.git
+
+## Environment setup
+Instructions are coming
+
+# Ready to go ?
+
+## <span id="testscenarios">Test scenarios</span>
+
+| # | Name | Tag | Description |
+| -- | -- | -- | -- |
+| 1 | Safety Portal Login | @successfulportallogin | Login to portal as Safety-Line |
+| 2 | Safety Cube Login | @successfulcubelogin | Login to cube as Safety-Line |
+| 3 | Portal KNE ASR Form filling | @formportalkneasrfill| Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
+| 4 | Cube KNE ASR Form checking | @formcubekneasrcheck| Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
+| 5 | Cube Risks Matrix | @matricerisques | Checks if filters and values in the table results are matching. And also if the tab has changed. |
+
+### How to launch the tests scenarios ?
 
 **Scenario with examples :**
 Do not forget to use "Scenario Outline" instead of simply "Scenario"
 
-**To run scenarios with @test1 and @test2:**
-`mvn test -Dcucumber.options="--tags @test1 --tags @test2"`
+**To run scenarios @test1 :**
+`mvn clean test -Dcucumber.options="--tags @test1"`
 
-**To run scenarios with @test1 or @test2:**
-`mvn test -Dcucumber.options="--tags @test1,@test2"`
+**To run scenarios @test1 and @test2 :**
+`mvn clean test -Dcucumber.options="--tags @test1 --tags @test2"`
+
+**To run scenario @test1 or @test2 :**
+`mvn clean test -Dcucumber.options="--tags @test1,@test2"`
+
+**N.B** : replace **test1**/**test2** by the test scenario tag. 
+The tags are either available in the feature files at ``src/test/resources/`` or in the upper table
+
+## <span id="extentreport">Extent report</span>
+The projet uses the [Extent Report framework](http://extentreports.com/), friendlier.
+
+Config file is at `./config/extent-config.xml`
+
+From this file, you can customize the report, with javascript and css.
+
+## <span id="screenshot">Screenshot</span>
+The function is in ``./src/main/java/SaveScreenshot.java``
+
+The function will generate a .png file, in ``./report/screenshot/``
+
+**N.B** : The path ``./report/screenshot/`` can be called by using `Props.getProperty("report.screenshot")` 
+
+To call the function
+``SaveScreenshot.screenshot(driver, MyWebElement);``
+
+This function is saving a screenshot, and also calls reporter's function ``Reporter.addScreenCaptureFromPath()`` to link the screenshot to the StepLog
+
+**N.B** : If you want to use this image for another stop, don't use this function. Directly use `Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "filename.png");`
 
 
-**nb** : *replace test1/test2 by the test scenario tag. The tags are available in .feature files at > **src/test/resources/***
-
-
-| # | Name | Tag | Cli | Description |
-| -- | -- | -- | -- | -- |
-| 1 | Safety Portal Login | @successfulportallogin | mvn test -Dcucumber.options="--tags @successfulportallogin" | Login to portal as Safety-Line |
-| 2 | Safety Cube Login | @successfulcubelogin | mvn test -Dcucumber.options="--tags @successfulcubelogin" | Login to cube as Safety-Line |
-| 3 | Portal KNE ASR Form filling | @formportalkneasrfill| mvn test -Dcucumber.options="--tags @formportalkneasrfill" | Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
-| 4 | Cube KNE ASR Form checking | @formcubekneasrcheck| mvn test -Dcucumber.options="--tags @cubekneasrcheck" | Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
-| 5 | Cube Risks Matrix | @matricerisques | mvn clean test -Dcucumber.options="--tags @matricerisques" | Checks if filters and values in the table results are matching. And also if the tab has changed |
-**Extent report**
-
-Config file is at **`./config/extent-config.xml`**
-From this file, you can customize the report, with javascript and css
-
-**Screenshot**
-
-``SaveScreenshot.screenshot(WebDriver driver, WebElement Element);``
-
-This function is saving a screenshot, and it also calls reporter's function ``Reporter.addScreenCaptureFromPath()`` to link the screenshot to the StepLog
-
-##Project structure
-
-
+## <span id="projectstructure">Project structure</span>
 ├── config                  #<br>
 ├── etc                     #<br>
 ├── media                   #<br>
@@ -50,19 +87,16 @@ This function is saving a screenshot, and it also calls reporter's function ``Re
 │   └── test                #<br>
 
 
-## Logs and Reporter logs
+## <span id="logsandreporterlogs">Logs and Reporter logs</span>
 
-When writting logs, in the console and in the reporter.
-
-Use these two functions : 
+I like to use these two function to write in both the console and the report what is happening. So please use these two functions to write log.
 
 ``
 System.out.println("Events counts do not matche");
 Reporter.addStepLog("Events counts do not matche"); 
 ``
 
-The second one, will write logs in the reporter file.
 
+## <span id="usefulfunctions">Useful functions</span>
 
-## Useful functions
-read the [function.md](function.md) file
+Read the [function.md](function.md) file
