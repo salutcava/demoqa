@@ -1,4 +1,7 @@
 @safetycube
+@riskassessment
+@cube
+
 Feature: Matrice des risques
   http://192.168.31.77/QA-SAFETYCUBE-MASTER/cube/#/dashboard
 
@@ -6,8 +9,8 @@ Feature: Matrice des risques
   Scenario: Verifier la coherence du nombre d'evenements et des filtres appliques
 
     Given I am logging in
-    And I open the menu for risk assessment
-    Then I open risk assessment module
+    And I open the menu
+    Then I select risk assessment
     And I select matrice de risques tab
     Then I select a non empty event box
     And I open the filter panel

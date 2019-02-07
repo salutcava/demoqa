@@ -119,7 +119,7 @@ public class App {
      */
     static void close(WebDriver driver){
         //driver.close();
-        driver.quit();
+        //driver.quit();
     }
 
     /**

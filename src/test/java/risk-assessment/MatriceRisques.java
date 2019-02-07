@@ -21,51 +21,44 @@ public class MatriceRisques extends Login{
         App.close(driver);
     }
 
-    @Given("^I am logging in")
-    public void i_am_logged_in_matricerisques() throws IOException{
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-        driver = new ChromeDriver();
-        Login.login_cube(driver);
-    }
-
-    @And("^I open the menu for risk assessment")
-    public void i_open_the_menu_riskassessment() throws IOException, InterruptedException {
-        System.out.println("I open the menu");
-        Reporter.addStepLog("I open the menu");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
-
-        WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
-        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-
-        App.highlight(driver,BurgerMenu);
-        App.scrollTo(driver,RiskAssessment);
-        App.highlight(driver,RiskAssessment);
-        BurgerMenu.click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"risk-assessment-module\"]")));
-
-        SaveScreenshot.screenshot(driver, "openmenu");
-
-    }
-
-    @Then("^I open risk assessment module")
-    public void i_open_risk_assessment() throws IOException {
-        System.out.println("I open risk assessment module");
-        Reporter.addStepLog("I open risk assessment module");
-
-        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-
-        RiskAssessment.click();
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-
-        SaveScreenshot.screenshot(driver, "openRiskAssessment");
-    }
+//    @And("^I open the menufor risk assessment")
+//    public void i_open_the_menu_riskassessment() throws IOException, InterruptedException {
+//        System.out.println("I open the menu");
+//        Reporter.addStepLog("I open the menu");
+//
+//        WebDriverWait wait = new WebDriverWait(driver, 30);
+//        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
+//
+//        WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
+//        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
+//
+//        App.highlight(driver,BurgerMenu);
+//        App.scrollTo(driver,RiskAssessment);
+//        App.highlight(driver,RiskAssessment);
+//        BurgerMenu.click();
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"risk-assessment-module\"]")));
+//
+//        SaveScreenshot.screenshot(driver, "openmenu");
+//
+//    }
+//
+//    @Then("^I open risk assessment module")
+//    public void i_open_risk_assessment() throws IOException {
+//        System.out.println("I open risk assessment module");
+//        Reporter.addStepLog("I open risk assessment module");
+//
+//        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
+//
+//        WebDriverWait wait = new WebDriverWait(driver, 30);
+//        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
+//
+//        RiskAssessment.click();
+//
+//        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
+//
+//        SaveScreenshot.screenshot(driver, "openRiskAssessment");
+//    }
 
     @And("^I select matrice de risques tab")
     public void iselectmatricederisquetab() throws IOException {

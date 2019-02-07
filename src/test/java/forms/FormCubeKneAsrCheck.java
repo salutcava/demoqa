@@ -24,12 +24,12 @@ public class FormCubeKneAsrCheck{
         App.close(driver);
     }
 
-    @Given("^I am logged in formcubekneasrcheck")
-    public void kne_cube(WebDriver driver) throws IOException {
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-        driver = new ChromeDriver();
-        Login.login_cube(driver);
-    }
+//    @Given("^I am logged in formcubekneasrcheck")
+//    public void kne_cube() throws IOException {
+//        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+//        driver = new ChromeDriver();
+//        Login.login_cube();
+//    }
 
     @And("^I open the menu formcubekneasrcheck")
     public void iOpenTheMenu() throws IOException {
