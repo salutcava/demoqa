@@ -100,10 +100,6 @@ public class App {
         js.executeScript("arguments[0].classList.add('selenium-highlight');",element);
 
         //TimeUnit.MILLISECONDS.sleep(10000);
-<<<<<<< HEAD
-=======
-
->>>>>>> adc9b32090620aacfd6d515e8617d5a5be4ce52e
         //rmhighlight(driver,element);
     }
 
