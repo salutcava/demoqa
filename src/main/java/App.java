@@ -1,4 +1,3 @@
-import com.cucumber.listener.Reporter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 
 public class App {
@@ -102,7 +100,10 @@ public class App {
         js.executeScript("arguments[0].classList.add('selenium-highlight');",element);
 
         //TimeUnit.MILLISECONDS.sleep(10000);
+<<<<<<< HEAD
+=======
 
+>>>>>>> adc9b32090620aacfd6d515e8617d5a5be4ce52e
         //rmhighlight(driver,element);
     }
 
@@ -122,30 +123,29 @@ public class App {
      */
     static void close(WebDriver driver){
         //driver.close();
+        driver.quit();
     }
 
     /**
-     * Doesn't work, but was a good idea
-     * Write logs, in console and in the reporter
-     * @param description Description of the log
-     * @param element Element, can be Webelement or String
+     * @return Add passed status icon
      */
-    static void writeLog(String description, Object element){
-        System.out.println(description +" : " + element);
+    static String testPassed(){
+        String imgSrc = "<img src=\"../media/img/icons/passed.png\"/> ";
+        return imgSrc;
+    }
 
-        if(element == null){
-            System.out.println(description);
-            Reporter.addScenarioLog(description);
-        }else{
-            System.out.println(description +" : " + element);
-            Reporter.addScenarioLog(description +" : " + element);
-        }
+    /**
+     * @return Add failed status icon
+     */
+    static String testFailed(){
+        String imgSrc = "<img src=\"../media/img/icons/alien.png\"/> ";
+        return imgSrc;
     }
 
     /**
      * Get xpath of an element, used when the element is located by text or something else than xpath
      * @param childElement Element to get xpath
-     * @param current ??
+     * @param current Should be left empty
      * @return
      */
     static String generateXPATH(WebElement childElement, String current) {
