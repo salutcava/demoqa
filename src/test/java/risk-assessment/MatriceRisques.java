@@ -90,7 +90,14 @@ public class MatriceRisques extends Login{
         Reporter.addStepLog("I select a non empty event box");
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
+<<<<<<< HEAD
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//parent::*[contains(text(), 'Evenement')]")));
+
+=======
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//parent::*[contains(text(), 'Evenement')]")));
+>>>>>>> adc9b32090620aacfd6d515e8617d5a5be4ce52e
 
         //This WebElement is the first found, from right top of the risks matrix
         WebElement EventText = driver.findElement(By.xpath("//parent::*[contains(text(), 'Evenement')]"));
@@ -176,10 +183,16 @@ public class MatriceRisques extends Login{
         Assert.assertEquals(ProbabilityLetterValueA,ProbabilityLetterValueB);
 
         if(ProbabilityLetterValueA.equals(ProbabilityLetterValueB)){
-            System.out.println("Values match !");
-            Reporter.addStepLog("Values match !");
+            System.out.println("Values from filter panel and table match !");
+            Reporter.addStepLog("Values from filter panel and table match !");
+        }else{
+            System.out.println("Values from filter panel and table do not match !");
+            Reporter.addStepLog("Values from filter panel and table do not match !");
         }
+<<<<<<< HEAD
+=======
 
+>>>>>>> adc9b32090620aacfd6d515e8617d5a5be4ce52e
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "FilterButton.png");
     }
 
@@ -218,11 +231,11 @@ public class MatriceRisques extends Login{
         Reporter.addStepLog("Table row number : " + TableRowSize);
 
         if(EventNumberValue == TableRowSize){
-            System.out.println("Events counts matches");
-            Reporter.addStepLog("Events counts matches");
+            System.out.println("Values from the risks matrix and the row counts match");
+            Reporter.addStepLog("Values from the risks matrix and the row counts match");
         }else{
-            System.out.println("Events counts do not matche");
-            Reporter.addStepLog("Events counts do not matche");
+            System.out.println("Values from the risks matrix and the row counts do not match");
+            Reporter.addStepLog("Values from the risks matrix and the row counts do not match");
         }
 
         Assert.assertEquals(EventNumberValue,TableRowSize);
@@ -260,6 +273,24 @@ public class MatriceRisques extends Login{
             System.out.println("Filter and table severity value do not matche !");
             Reporter.addStepLog("Filter and table severity value do not matche !");
         }
+<<<<<<< HEAD
+
+        System.out.println("Filter " + SeverityFilterName + "value : " + SeverityFilterValue);
+        Reporter.addStepLog("Filter " + SeverityFilterName + "value : " + SeverityFilterValue);
+
+        System.out.println("Severity number in the table : " + TableSeverityText);
+        Reporter.addStepLog("Severity number in the table : " + TableSeverityText);
+
+
+        if(SeverityFilterValue.equals(TableSeverityText)){
+            System.out.println("Values from filter and table severity match !");
+            Reporter.addStepLog("Values from filter and table severity match !");
+        }else {
+            System.out.println("Values from filter and table severity do not match !");
+            Reporter.addStepLog("Values from filter and table severity do not match !");
+        }
+=======
+>>>>>>> adc9b32090620aacfd6d515e8617d5a5be4ce52e
         Assert.assertEquals(SeverityFilterValue,TableSeverityText);
 
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "FilterButton.png");

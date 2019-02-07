@@ -27,18 +27,12 @@ Do not forget to use "Scenario Outline" instead of simply "Scenario"
 Config file is at **`./config/extent-config.xml`**
 From this file, you can customize the report, with javascript and css
 
-<<<<<<< HEAD
-###Screenshots
----
-=======
-=======
 **Screenshot**
 
 ``SaveScreenshot.screenshot(WebDriver driver, WebElement Element);``
 
 This function is saving a screenshot, and it also calls reporter's function ``Reporter.addScreenCaptureFromPath()`` to link the screenshot to the StepLog
 
->>>>>>> d441142598523a93e8107c4354a344afd4ef89f9
 ##Project structure
 
 
