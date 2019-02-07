@@ -35,18 +35,23 @@ Instructions are coming
 ### How to launch the tests scenarios ?
 
 **Scenario with examples :**
+
 Do not forget to use "Scenario Outline" instead of simply "Scenario"
 
 **To run scenarios @test1 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1"`
 
 **To run scenarios @test1 and @test2 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1 --tags @test2"`
 
 **To run scenario @test1 or @test2 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1,@test2"`
 
 **N.B** : replace **test1**/**test2** by the test scenario tag. 
+
 The tags are either available in the feature files at ``src/test/resources/`` or in the upper table
 
 ## Extent report
@@ -63,8 +68,7 @@ The function will generate a .png file, in ``./report/screenshot/``
 
 **N.B** : The path ``./report/screenshot/`` can be called by using `Props.getProperty("report.screenshot")` 
 
-To call the function
-``SaveScreenshot.screenshot(driver, MyWebElement);``
+To call the function ``SaveScreenshot.screenshot(driver, MyWebElement);``
 
 This function is saving a screenshot, and also calls reporter's function ``Reporter.addScreenCaptureFromPath()`` to link the screenshot to the StepLog
 
@@ -92,6 +96,8 @@ I like to use these two function to write in both the console and the report wha
 
 ``
 System.out.println("Events counts do not matche");
+``
+``
 Reporter.addStepLog("Events counts do not matche"); 
 ``
 
