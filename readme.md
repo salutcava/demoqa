@@ -21,7 +21,7 @@ Do not forget to use "Scenario Outline" instead of simply "Scenario"
 | 2 | Safety Cube Login | @successfulcubelogin | mvn test -Dcucumber.options="--tags @successfulcubelogin" | Login to cube as Safety-Line |
 | 3 | Portal KNE ASR Form filling | @formportalkneasrfill| mvn test -Dcucumber.options="--tags @formportalkneasrfill" | Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
 | 4 | Cube KNE ASR Form checking | @formcubekneasrcheck| mvn test -Dcucumber.options="--tags @cubekneasrcheck" | Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
-
+|   | Cube Risks Matrix | @matricerisques | mvn clean test -Dcucumber.options="--tags @matricerisques" | Checks if filters and values in the table results are matching. And also if the tab has changed |
 **Extent report**
 
 Config file is at **`./config/extent-config.xml`**
