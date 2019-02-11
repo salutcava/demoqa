@@ -1,15 +1,14 @@
-
 # Automated test for Safety Cube
 
 ***Tests are made for french language***
 
  - [Installation](#installation)
- - [Tests screnarios](#testscenarios)
- - [Extent report](#extentreport)
+ - [Tests screnarios](#test-scenarios)
+ - [Extent report](#extent-report)
  - [Screenshot](#screenshot)
- - [Project structure](#projectstructure)
- - [Logs and reporter logs](#logsandreporterlogs)
- - [Useful functions](#usefulfunctions)
+ - [Project structure](#project-structure)
+ - [Logs and reporter logs](#logs-and-reporter-logs)
+ - [Useful functions](#useful-functions)
  
 ---
 
@@ -23,7 +22,7 @@ Instructions are coming
 
 # Ready to go ?
 
-## <span id="testscenarios">Test scenarios</span>
+## Test scenarios
 
 | # | Name | Tag | Description |
 | -- | -- | -- | -- |
@@ -36,43 +35,47 @@ Instructions are coming
 ### How to launch the tests scenarios ?
 
 **Scenario with examples :**
+
 Do not forget to use "Scenario Outline" instead of simply "Scenario"
 
 **To run scenarios @test1 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1"`
 
 **To run scenarios @test1 and @test2 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1 --tags @test2"`
 
 **To run scenario @test1 or @test2 :**
+
 `mvn clean test -Dcucumber.options="--tags @test1,@test2"`
 
 **N.B** : replace **test1**/**test2** by the test scenario tag. 
+
 The tags are either available in the feature files at ``src/test/resources/`` or in the upper table
 
-## <span id="extentreport">Extent report</span>
+## Extent report
 The projet uses the [Extent Report framework](http://extentreports.com/), friendlier.
 
 Config file is at `./config/extent-config.xml`
 
 From this file, you can customize the report, with javascript and css.
 
-## <span id="screenshot">Screenshot</span>
+## Screenshot
 The function is in ``./src/main/java/SaveScreenshot.java``
 
 The function will generate a .png file, in ``./report/screenshot/``
 
 **N.B** : The path ``./report/screenshot/`` can be called by using `Props.getProperty("report.screenshot")` 
 
-To call the function
-``SaveScreenshot.screenshot(driver, MyWebElement);``
+To call the function ``SaveScreenshot.screenshot(driver, MyWebElement);``
 
 This function is saving a screenshot, and also calls reporter's function ``Reporter.addScreenCaptureFromPath()`` to link the screenshot to the StepLog
 
 **N.B** : If you want to use this image for another stop, don't use this function. Directly use `Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "filename.png");`
 
 
-## <span id="projectstructure">Project structure</span>
+## Project structure
 ├── config                  #<br>
 ├── etc                     #<br>
 ├── media                   #<br>
@@ -87,16 +90,18 @@ This function is saving a screenshot, and also calls reporter's function ``Repor
 │   └── test                #<br>
 
 
-## <span id="logsandreporterlogs">Logs and Reporter logs</span>
+## Logs and Reporter logs
 
 I like to use these two function to write in both the console and the report what is happening. So please use these two functions to write log.
 
 ``
 System.out.println("Events counts do not matche");
+``
+``
 Reporter.addStepLog("Events counts do not matche"); 
 ``
 
 
-## <span id="usefulfunctions">Useful functions</span>
+## Useful functions
 
 Read the [function.md](function.md) file

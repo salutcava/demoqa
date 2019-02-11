@@ -5,5 +5,20 @@ Feature: Opening module from the menu
 
   Scenario: Opening module from the menu
     Given I am logging in
-    And I open the menu
-    Then I select safety occurence
+    Then I open the menu
+    And I select safety-occurrence-module
+
+#  Examples:
+#    | Module |
+#    | safety-occurrence |
+#    | action-followup |
+#    | finding |
+#    | audit-management |
+#    | impact |
+#    | risk-assessment |
+#    | publication |
+#    | standard |
+#    | taxonomy |
+#    | dashboard |
+#    | document-management |
+#    | indicators-list |
