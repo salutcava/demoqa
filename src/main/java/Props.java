@@ -2,7 +2,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class Props {
-    private static Properties defaultProps = new Properties();
+    public static Properties defaultProps = new Properties();
     static {
         try {
             FileInputStream in = new FileInputStream("./src/main/resources/config.properties");
