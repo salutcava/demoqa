@@ -17,15 +17,11 @@ import java.util.List;
 
 public class MatriceRisques extends Login{
 
-    //private static WebDriver driver;
-    //static JavascriptExecutor js;
-
     @And("^I select matrice de risques tab")
     public void iselectmatricederisquetab() throws IOException {
         System.out.println("I select matrice de risques tab");
         Reporter.addStepLog("I select matrice de risques tab");
 
-        //WebDriverWait wait = new WebDriverWait(driver, 30);
         // This element is an element of the right matrice
         // We wait that the matrix is visible
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));

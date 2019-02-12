@@ -11,16 +11,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 
-public class FormPortalKneAsrFill {
+public class FormPortalKneAsrFill extends Login{
 
     private static WebDriver driver;
     private static JavascriptExecutor js;
 
     @Then("^I open the form formportalkneasrfill")
-    public void IOpenForm() throws IOException {
+    public void IOpenForm() {
         System.out.println("Selecting the form : ASR #form_52");
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form_52")));
 
         WebElement FormButton = driver.findElement(By.xpath("//*[@id=\"form_52\"]"));
@@ -28,10 +27,9 @@ public class FormPortalKneAsrFill {
     }
 
     @And("^I fill the form formportalkneasrfill")
-    public void fill_form_filling() throws IOException {
+    public void fill_form_filling() {
         System.out.println("Filling the form with data and an attached file");
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
 
         // General information
@@ -139,8 +137,7 @@ public class FormPortalKneAsrFill {
     }
 
     @Then("^I post the form formportalkneasrfill")
-    public void post_form_filling() throws IOException {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+    public void post_form_filling() {
 
         System.out.println("Posting the form");
 

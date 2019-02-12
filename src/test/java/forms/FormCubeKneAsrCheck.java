@@ -1,36 +1,20 @@
 import com.cucumber.listener.Reporter;
-import cucumber.api.java.After;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 
-public class FormCubeKneAsrCheck{
-
-    private static WebDriver driver;
-    private static JavascriptExecutor js;
-
-    @After
-    public void AfterFormCubeKneAsrCheck(){
-        App.close(driver);
-    }
+public class FormCubeKneAsrCheck extends Login{
 
     @And("^I open the form formcubekneasrcheck")
     public void iOpenTheForm() throws IOException {
         System.out.println("I open the form");
         Reporter.addStepLog("I open the form");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
         WebElement OccurenceLine = driver.findElement(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]"));
@@ -39,7 +23,6 @@ public class FormCubeKneAsrCheck{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
 
-        //App.highlight(driver,OccurenceLine);
         SaveScreenshot.screenshot(driver, "openform");
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openform.png");
 
@@ -51,7 +34,6 @@ public class FormCubeKneAsrCheck{
         System.out.println("General information check");
         Reporter.addStepLog("General information check");
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
 
         // General information
