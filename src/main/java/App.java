@@ -10,7 +10,7 @@ import java.util.List;
 
 public class App {
 
-    public static WebDriver driver;
+    static WebDriver driver;
     private static JavascriptExecutor js;
 
     /**
@@ -119,7 +119,7 @@ public class App {
      */
     static void close(WebDriver driver){
         //driver.close();
-        driver.quit();
+        //driver.quit();
     }
 
     /**

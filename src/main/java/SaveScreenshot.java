@@ -10,6 +10,15 @@ public class SaveScreenshot {
     public static WebDriver driver;
     public static JavascriptExecutor js;
 
+    /**
+     * The function will generate a png file and will link this image to the report
+     * Using the function Reporter.addScreenCaptureFromPath
+     * If you want to use this image for another stop, don't use this function
+     * Directly use Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "filename.png");
+     * @param driver Webdriver is needed
+     * @param filename Name of the png file.
+     * @throws IOException
+     */
     static void screenshot(WebDriver driver, String filename) throws IOException {
         //Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + ".png");
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + filename + ".png");

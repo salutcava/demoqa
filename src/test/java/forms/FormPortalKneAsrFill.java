@@ -6,7 +6,6 @@ import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
@@ -21,12 +20,12 @@ public class FormPortalKneAsrFill {
         App.close(driver);
     }
 
-    @Given("^I am logged in formportalkneasrfill")
-    public void i_am_logged_in_for_filling_the_form() throws IOException {
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-        WebDriver driver = new ChromeDriver();
-        Login.login_portal(driver);
-    }
+//    @Given("^I am logged in formportalkneasrfill")
+//    public void i_am_logged_in_for_filling_the_form() throws IOException {
+//        //System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+//        //WebDriver driver = new ChromeDriver();
+//        Login.login_portal(driver);
+//    }
 
     @Then("^I open the form formportalkneasrfill")
     public void IOpenForm() throws IOException {
