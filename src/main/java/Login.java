@@ -1,6 +1,8 @@
 import com.cucumber.listener.Reporter;
+import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,7 +12,7 @@ public class Login{
     static WebDriver driver;
     static WebDriverWait wait;
 
-    private static void login(String env, String username, String password) throws IOException {
+    static void login_cube() throws IOException {
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
@@ -18,58 +20,83 @@ public class Login{
 
         Login.driver.manage().window().maximize();
 
-        Login.driver.get(Props.getProperty("server.safetycube." + env));
+        Login.driver.get(Props.getProperty("server.safetycube.cube"));
         System.out.println("Exec a wait");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("html > body > app-root > app-login > div > div > div > img")));
-
-        if(env.equals("admin")) {
-            // admin
-            Login.driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys(username);
-            Login.driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
-        }else if(env.equals("cube")) {
-            // cube
-            Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys(username);
-            Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys(password);
-        }else {
-            // portal
-            Login.driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys(username);
-            Login.driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(password);
-        }
+        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
+        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
+        WebElement LoginButton = Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button[1]"));
+        SaveScreenshot.screenshot(driver, "loginpagecube");
 
         System.out.println("Click on the login button");
         Reporter.addStepLog("Click on the login button");
-
-        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button[1]")).click();
+        LoginButton.click();
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img")));
 
+        System.out.println("Landing to page : " + Login.driver.getCurrentUrl());
+        Reporter.addStepLog("Landing to page : " + Login.driver.getCurrentUrl());
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//body/app-root[1]/app-dashboard[1]/section[1]/div[1]/div[2]/div[1]/div[1]")));
-        if(Login.driver.getCurrentUrl().contains("dashboard")){
-            Reporter.addStepLog("The URL should contain : \"dashboard\".");
-            Reporter.addStepLog("The URL is : " + Login.driver.getCurrentUrl());
-
-            SaveScreenshot.screenshot(driver, "loggedin");
-            Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "loggedin.png");
-        }else{
-            Reporter.addStepLog("The URL should contain : \"dashboard\".");
-            Reporter.addStepLog("The URL is : " + Login.driver.getCurrentUrl());
-
-            SaveScreenshot.screenshot(driver, "notloggedin");
-            Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "notloggedin.png");
-        }
-    }
-
-    static void login_cube() throws IOException {
-        login("cube","safety-line","Telemark_64");
+        SaveScreenshot.screenshot(driver, "landingtocube");
     }
 
     static void login_admin() throws IOException {
-        login("admin","safety-line","Telemark_64");
+        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 30);
+
+        Login.driver.manage().window().maximize();
+
+        Login.driver.get(Props.getProperty("server.safetycube.admin"));
+        System.out.println("Exec a wait");
+
+        // admin
+        Login.driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("safety-line");
+        Login.driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Telemark_64");
+        WebElement LoginButton = Login.driver.findElement(By.xpath("//*[@id=\"form\"]/button"));
+        SaveScreenshot.screenshot(driver, "loginpageadmin");
+
+        System.out.println("Click on the login button");
+        Reporter.addStepLog("Click on the login button");
+        LoginButton.click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/ng-component/app-home/main/app-header/header/div/img")));
+
+        System.out.println("Landing to page : " + Login.driver.getCurrentUrl());
+        Reporter.addStepLog("Landing to page : " + Login.driver.getCurrentUrl());
+
+        // admin
+        SaveScreenshot.screenshot(driver, "landingtoadmin");
     }
 
     static void login_portal() throws IOException {
-        login("portal", "safety-line", "Telemark_64");
+        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 30);
+
+        Login.driver.manage().window().maximize();
+
+        Login.driver.get(Props.getProperty("server.safetycube.portal"));
+        System.out.println("Exec a wait");
+
+        // portal
+        Login.driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("safety-line");
+        Login.driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Telemark_64");
+        WebElement LoginButton = Login.driver.findElement(By.xpath("//*[@id=\"btnLogin\"]"));
+        SaveScreenshot.screenshot(driver, "loginpageportal");
+
+        System.out.println("Click on the login button");
+        Reporter.addStepLog("Click on the login button");
+        LoginButton.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/ng-component/app-report-create/main/app-header/header/div/a/img")));
+
+        System.out.println("Landing to page : " + Login.driver.getCurrentUrl());
+        Reporter.addStepLog("Landing to page : " + Login.driver.getCurrentUrl());
+
+        // portal
+        SaveScreenshot.screenshot(driver, "landingtoportal");
     }
 }

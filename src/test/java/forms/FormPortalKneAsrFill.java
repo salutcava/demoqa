@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,19 +14,7 @@ import java.io.IOException;
 public class FormPortalKneAsrFill {
 
     private static WebDriver driver;
-
-    @After
-    public void AfterFormPortalKneAsrFill(){
-        System.out.println("Closing AfterFormPortalKneAsrFill");
-        App.close(driver);
-    }
-
-//    @Given("^I am logged in formportalkneasrfill")
-//    public void i_am_logged_in_for_filling_the_form() throws IOException {
-//        //System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-//        //WebDriver driver = new ChromeDriver();
-//        Login.login_portal(driver);
-//    }
+    private static JavascriptExecutor js;
 
     @Then("^I open the form formportalkneasrfill")
     public void IOpenForm() throws IOException {

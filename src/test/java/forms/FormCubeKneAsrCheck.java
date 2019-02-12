@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,52 +18,11 @@ import static org.junit.Assert.*;
 public class FormCubeKneAsrCheck{
 
     private static WebDriver driver;
+    private static JavascriptExecutor js;
 
     @After
     public void AfterFormCubeKneAsrCheck(){
-        System.out.println("Closing AfterFormCubeKneAsrCheck");
         App.close(driver);
-    }
-
-//    @Given("^I am logged in formcubekneasrcheck")
-//    public void kne_cube() throws IOException {
-//        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-//        driver = new ChromeDriver();
-//        Login.login_cube();
-//    }
-
-    @And("^I open the menu formcubekneasrcheck")
-    public void iOpenTheMenu() throws IOException {
-        System.out.println("Opening Menu");
-        Reporter.addStepLog("Opening Menu");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
-        WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
-
-        BurgerMenu.click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"safety-occurrence-module\"]")));
-
-        SaveScreenshot.screenshot(driver, "openmenu");
-        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openmenu.png");
-    }
-
-    @Then("^I open safety occurence formcubekneasrcheck")
-    public void iOpenSafetyOccurence() throws IOException, InterruptedException {
-        System.out.println("Opening Safety Occurence!");
-        Reporter.addStepLog("Opening Safety Occurence");
-
-        WebElement SafetyOccurence = driver.findElement(By.xpath("//*[@id=\"safety-occurrence-module\"]"));
-
-        SafetyOccurence.click();
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
-
-        SaveScreenshot.screenshot(driver, "opensafetyoccurence");
-        Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "opensafetyoccurence.png");
     }
 
     @And("^I open the form formcubekneasrcheck")
@@ -93,7 +53,6 @@ public class FormCubeKneAsrCheck{
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
-
 
         // General information
         // Title
