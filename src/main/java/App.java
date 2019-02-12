@@ -10,7 +10,7 @@ import java.util.List;
 
 public class App {
 
-    public static WebDriver driver;
+    static WebDriver driver;
     private static JavascriptExecutor js;
 
     /**
