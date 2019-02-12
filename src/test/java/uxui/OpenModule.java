@@ -11,16 +11,6 @@ import java.io.IOException;
 
 public class OpenModule extends Login{
 
-    @After
-    public void OpenModuleAfter(){
-        App.close(driver);
-    }
-
-    @Given("^I am logging in")
-    public void main() throws IOException {
-        Login.login_cube();
-    }
-
     @Then("^I open the menu")
     public void iopenthemenuu() throws InterruptedException, IOException {
         System.out.println("I open the menu");

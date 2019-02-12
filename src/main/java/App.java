@@ -8,9 +8,9 @@ import java.util.Date;
 import java.util.List;
 
 
-public class App {
+public class App extends Login{
 
-    static WebDriver driver;
+    private static WebDriver driver;
     private static JavascriptExecutor js;
 
     /**

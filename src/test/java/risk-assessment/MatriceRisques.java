@@ -5,6 +5,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,57 +17,15 @@ import java.util.List;
 
 public class MatriceRisques extends Login{
 
-    @After
-    public void AfterMatriceRisques(){
-        System.out.println("Closing MatriceRisques");
-        App.close(driver);
-    }
-
-//    @And("^I open the menufor risk assessment")
-//    public void i_open_the_menu_riskassessment() throws IOException, InterruptedException {
-//        System.out.println("I open the menu");
-//        Reporter.addStepLog("I open the menu");
-//
-//        WebDriverWait wait = new WebDriverWait(driver, 30);
-//        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
-//
-//        WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
-//        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-//
-//        App.highlight(driver,BurgerMenu);
-//        App.scrollTo(driver,RiskAssessment);
-//        App.highlight(driver,RiskAssessment);
-//        BurgerMenu.click();
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"risk-assessment-module\"]")));
-//
-//        SaveScreenshot.screenshot(driver, "openmenu");
-//
-//    }
-//
-//    @Then("^I open risk assessment module")
-//    public void i_open_risk_assessment() throws IOException {
-//        System.out.println("I open risk assessment module");
-//        Reporter.addStepLog("I open risk assessment module");
-//
-//        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-//
-//        WebDriverWait wait = new WebDriverWait(driver, 30);
-//        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-//
-//        RiskAssessment.click();
-//
-//        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-//
-//        SaveScreenshot.screenshot(driver, "openRiskAssessment");
-//    }
+    //private static WebDriver driver;
+    //static JavascriptExecutor js;
 
     @And("^I select matrice de risques tab")
     public void iselectmatricederisquetab() throws IOException {
         System.out.println("I select matrice de risques tab");
         Reporter.addStepLog("I select matrice de risques tab");
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        //WebDriverWait wait = new WebDriverWait(driver, 30);
         // This element is an element of the right matrice
         // We wait that the matrix is visible
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));
