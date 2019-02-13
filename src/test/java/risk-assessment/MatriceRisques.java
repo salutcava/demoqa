@@ -5,6 +5,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,64 +17,11 @@ import java.util.List;
 
 public class MatriceRisques extends Login{
 
-    @After
-    public void AfterMatriceRisques(){
-        System.out.println("Closing MatriceRisques");
-        App.close(driver);
-    }
-
-    @Given("^I am logging in")
-    public void i_am_logged_in_matricerisques() throws IOException{
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-        driver = new ChromeDriver();
-        Login.login_cube(driver);
-    }
-
-    @And("^I open the menu for risk assessment")
-    public void i_open_the_menu_riskassessment() throws IOException, InterruptedException {
-        System.out.println("I open the menu");
-        Reporter.addStepLog("I open the menu");
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("panel-btn")));
-
-        WebElement BurgerMenu = driver.findElement(By.xpath("//*[@id=\"panel-btn\"]"));
-        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-
-        App.highlight(driver,BurgerMenu);
-        App.scrollTo(driver,RiskAssessment);
-        App.highlight(driver,RiskAssessment);
-        BurgerMenu.click();
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"risk-assessment-module\"]")));
-
-        SaveScreenshot.screenshot(driver, "openmenu");
-
-    }
-
-    @Then("^I open risk assessment module")
-    public void i_open_risk_assessment() throws IOException {
-        System.out.println("I open risk assessment module");
-        Reporter.addStepLog("I open risk assessment module");
-
-        WebElement RiskAssessment = driver.findElement(By.xpath("//*[@id=\"risk-assessment-module\"]"));
-
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-
-        RiskAssessment.click();
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); //logo is present
-
-        SaveScreenshot.screenshot(driver, "openRiskAssessment");
-    }
-
     @And("^I select matrice de risques tab")
     public void iselectmatricederisquetab() throws IOException {
         System.out.println("I select matrice de risques tab");
         Reporter.addStepLog("I select matrice de risques tab");
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
         // This element is an element of the right matrice
         // We wait that the matrix is visible
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));
@@ -176,8 +125,11 @@ public class MatriceRisques extends Login{
         Assert.assertEquals(ProbabilityLetterValueA,ProbabilityLetterValueB);
 
         if(ProbabilityLetterValueA.equals(ProbabilityLetterValueB)){
-            System.out.println("Values match !");
-            Reporter.addStepLog("Values match !");
+            System.out.println("Values from filter panel and table match !");
+            Reporter.addStepLog("Values from filter panel and table match !");
+        }else{
+            System.out.println("Values from filter panel and table do not match !");
+            Reporter.addStepLog("Values from filter panel and table do not match !");
         }
 
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "FilterButton.png");
@@ -218,11 +170,11 @@ public class MatriceRisques extends Login{
         Reporter.addStepLog("Table row number : " + TableRowSize);
 
         if(EventNumberValue == TableRowSize){
-            System.out.println("Events counts matches");
-            Reporter.addStepLog("Events counts matches");
+            System.out.println("Values from the risks matrix and the row counts match");
+            Reporter.addStepLog("Values from the risks matrix and the row counts match");
         }else{
-            System.out.println("Events counts do not matche");
-            Reporter.addStepLog("Events counts do not matche");
+            System.out.println("Values from the risks matrix and the row counts do not match");
+            Reporter.addStepLog("Values from the risks matrix and the row counts do not match");
         }
 
         Assert.assertEquals(EventNumberValue,TableRowSize);
@@ -260,6 +212,22 @@ public class MatriceRisques extends Login{
             System.out.println("Filter and table severity value do not matche !");
             Reporter.addStepLog("Filter and table severity value do not matche !");
         }
+
+        System.out.println("Filter " + SeverityFilterName + "value : " + SeverityFilterValue);
+        Reporter.addStepLog("Filter " + SeverityFilterName + "value : " + SeverityFilterValue);
+
+        System.out.println("Severity number in the table : " + TableSeverityText);
+        Reporter.addStepLog("Severity number in the table : " + TableSeverityText);
+
+
+        if(SeverityFilterValue.equals(TableSeverityText)){
+            System.out.println("Values from filter and table severity match !");
+            Reporter.addStepLog("Values from filter and table severity match !");
+        }else {
+            System.out.println("Values from filter and table severity do not match !");
+            Reporter.addStepLog("Values from filter and table severity do not match !");
+        }
+
         Assert.assertEquals(SeverityFilterValue,TableSeverityText);
 
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "FilterButton.png");
