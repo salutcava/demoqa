@@ -10,8 +10,8 @@ import java.util.List;
 
 public class App extends Login{
 
-    private static WebDriver driver;
-    private static JavascriptExecutor js;
+    static WebDriver driver;
+    static JavascriptExecutor js;
 
     /**
      * Return timestamp : yyyyMMddHHmmss
