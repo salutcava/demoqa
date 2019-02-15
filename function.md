@@ -8,7 +8,7 @@
 | Wait that an element is present in DOM | wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img"))); |
 | Add screenshot to report (screenshot must exists before using it) | Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + ".png"); |
 | Find by xpath css class | By.xpath("//div[@class='panel-collapse collapse']") |
-|  |  |
+| Find elements and check if it exists | int isPresent = driver.findElements(By.id("panel-action")).size(); |
 |  |  |
 |  |  |
 |  |  |
