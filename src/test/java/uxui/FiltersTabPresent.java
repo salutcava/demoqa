@@ -1,10 +1,7 @@
 import com.cucumber.listener.Reporter;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import cucumber.api.java.en.And;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.IOException;
 
@@ -17,7 +14,7 @@ public class FiltersTabPresent extends Login{
         int FilterPanel = driver.findElements(By.id(element)).size();
         System.out.println(FilterPanel);
 
-        if(FilterPanel >= 0){
+        if(FilterPanel > 0){
             App.highlight(driver,driver.findElement(By.id(element)));
         }
 
@@ -38,7 +35,7 @@ public class FiltersTabPresent extends Login{
         int FilterPanel = driver.findElements(By.id(element)).size();
         System.out.println(FilterPanel);
 
-        if(FilterPanel >= 0){
+        if(FilterPanel > 0){
             App.highlight(driver,driver.findElement(By.id(element)));
         }
 
