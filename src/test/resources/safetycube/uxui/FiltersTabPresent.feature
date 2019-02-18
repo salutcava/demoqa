@@ -2,7 +2,7 @@
 
 Feature: This test, will check the presence of the filters panel
 
-  @filterstabsafetyoccurence
+  @filterstabsafetyoccurrence
   Scenario: Checking the presence of the filters panel in safety occurrence module
     Given I am logging in to the cube
     And I open the menu

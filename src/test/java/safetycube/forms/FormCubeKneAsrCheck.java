@@ -9,21 +9,21 @@ import java.io.IOException;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 
-public class FormCubeKneAsrCheck extends Login{
+public class FormCubeKneAsrCheck extends Login {
 
     @And("^I open the form formcubekneasrcheck")
     public void iOpenTheForm() throws IOException {
         System.out.println("I open the form");
         Reporter.addStepLog("I open the form");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
-        WebElement OccurenceLine = driver.findElement(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]"));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]")));
+        WebElement OccurenceLine = Login.driver.findElement(By.xpath("/html/body/app-root/app-occurrence-list/section/app-list/app-list-content/table/tbody/tr[2]"));
 
         OccurenceLine.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
 
-        SaveScreenshot.screenshot(driver, "openform");
+        SaveScreenshot.screenshot(Login.driver, "openform");
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "openform.png");
 
         System.out.println("Clicked on occurence line to open the form");
@@ -34,15 +34,15 @@ public class FormCubeKneAsrCheck extends Login{
         System.out.println("General information check");
         Reporter.addStepLog("General information check");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
 
         // General information
         // Title
-        WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
+        WebElement FormTitle = Login.driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
         String FormTitleValue = FormTitle.getAttribute("value");
 
         //App.scrollTo(FormTitle);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
+        Login.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"TITLE\"]")));
 
         //SaveScreenshot.screenshot(driver, "generalinformationcheck");
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "generalinformationcheck.png");
@@ -60,11 +60,11 @@ public class FormCubeKneAsrCheck extends Login{
         System.out.println("Title check");
 
         // Flight number
-        WebElement FlightNumber = driver.findElement(By.id("chr_1_2"));
+        WebElement FlightNumber = Login.driver.findElement(By.id("chr_1_2"));
         String FlightNumberValue = FlightNumber.getAttribute("value");
 
         //App.scrollTo(FlightNumber);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_2")));
+        Login.wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_2")));
 
         //App.highlight(FlightNumber);
         //SaveScreenshot.screenshot(driver, "flightnumber");
@@ -79,15 +79,15 @@ public class FormCubeKneAsrCheck extends Login{
         }
 
         // Aircraft type
-        WebElement AirCraftType = driver.findElement(By.id("chr_1_4"));
-        WebElement AirCraftTypeSelectOption = driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/div[4]/div[1]/div[2]/div/div/ul/li[2]"));
+        WebElement AirCraftType = Login.driver.findElement(By.id("chr_1_4"));
+        WebElement AirCraftTypeSelectOption = Login.driver.findElement(By.xpath("//*[@id=\"form_report_id\"]/div[4]/div[1]/div[2]/div/div/ul/li[2]"));
         String AirCraftTypeSelectOptionText = AirCraftTypeSelectOption.getAttribute("innerHTML");
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_4")));
+        Login.wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_4")));
 
-        App.scrollTo(driver,AirCraftTypeSelectOption);
-        App.highlight(driver,AirCraftTypeSelectOption);
-        SaveScreenshot.screenshot(driver, "aircrafttypevalue");
+        App.scrollTo(Login.driver,AirCraftTypeSelectOption);
+        App.highlight(Login.driver,AirCraftTypeSelectOption);
+        SaveScreenshot.screenshot(Login.driver, "aircrafttypevalue");
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "aircrafttypevalue.png");
 
         if(AirCraftTypeSelectOptionText.contentEquals("A330-300")){
@@ -100,7 +100,7 @@ public class FormCubeKneAsrCheck extends Login{
         }
 
 
-        WebElement CaptainReport = driver.findElement(By.xpath("//*[@id=\"txt_4_1\"]"));
+        WebElement CaptainReport = Login.driver.findElement(By.xpath("//*[@id=\"txt_4_1\"]"));
 
 //        WebElement Immatriculation = driver.findElement(By.xpath("//*[@id=\"IMMAT\"]"));
 

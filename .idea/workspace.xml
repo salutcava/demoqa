@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="0ab81677-b372-415a-ba65-2cc659989143" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/forms/FormCubeKneAsrCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/forms/FormCubeKneAsrCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/forms/FormPortalKneAsrFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/forms/FormPortalKneAsrFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/risk-assessment/MatriceRisques.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/risk-assessment/MatriceRisques.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/uxui/FiltersTabPresent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uxui/LoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uxui/OpenModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/uxui/OpenModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uxui/VerticalScrollBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/uxui/VerticalScrollBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/forms/FormCubeKneAsrCheck.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/forms/FormCubeKneAsrCheck.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/forms/FormPortalKneAsrlFill.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/forms/FormPortalKneAsrlFill.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/risk-assessment/MatriceRisques.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/risk-assessment/MatriceRisques.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/uxui/FiltersTabPresent.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uxui/LoginIn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/uxui/LoginIn.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uxui/OpenModule.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/uxui/OpenModule.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/uxui/VerticalScrollBar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/uxui/VerticalScrollBar.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,48 +26,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#346#347#0" expanded="true" />
-                    <element signature="e#379#380#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1938">
-                  <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="124">
-                  <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/FiltersTabPresent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="44" column="84" lean-forward="true" selection-start-line="44" selection-start-column="84" selection-end-line="44" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -163,8 +146,14 @@
         <option value="$PROJECT_DIR$/function.md" />
         <option value="$PROJECT_DIR$/src/main/java/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature" />
         <option value="$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/forms/FormCubeKneAsrCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/forms/FormPortalKneAsrFill.java" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/uxui/OpenModule.java" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/uxui/VerticalScrollBar.java" />
+        <option value="$PROJECT_DIR$/src/test/java/safetycube/uxui/FiltersTabPresent.java" />
       </list>
     </option>
   </component>
@@ -207,6 +196,19 @@
               <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
               <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -222,6 +224,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="safetycube" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="safetycube" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="safetycube" type="462c0819:PsiDirectoryNode" />
+              <item name="risk-assessment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="safetycube" type="462c0819:PsiDirectoryNode" />
               <item name="uxui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -230,14 +259,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="automatedtests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="automatedtests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="uxui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,27 +269,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550249841164" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550500061663" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="last_opened_file_path" value="C:/dev/sendtome" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev/sendtome" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\automatedtests\src\test\resources\forms" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="features" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\automatedtests\src\test\resources\features" />
       <recent name="C:\automatedtests\src\test\resources\ux-ui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="features" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\automatedtests\src\test\resources\safetycube" />
+      <recent name="C:\automatedtests\src\test\resources\forms" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,6 +329,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-117" y="-1088" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1391258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -323,7 +346,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" visible="true" weight="0.6334405" />
+      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" visible="true" weight="0.19185424" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -335,40 +358,12 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" visible="true" weight="0.23901394" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290461" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/risk-assessment/MatriceRisques.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/safetycube/risk-assessment/MatriceRisques.java</url>
           <line>111</line>
           <properties />
           <option name="timeStamp" value="7" />
@@ -492,22 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uxui/VerticalScrollBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-          <folding>
-            <element signature="method#i_am_logged_in_verticalscrollbar#0;class#VerticalScrollBar#0" />
-            <element signature="e#651#2908#1" />
-            <element signature="e#2192#2540#1" />
-            <element signature="e#2544#2898#1" />
-            <element signature="method#i_check_if_the_vertical_scrollbar_exists#0;class#VerticalScrollBar#0" />
-            <element signature="e#3319#3385#1" />
-            <element signature="e#3389#3459#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/SafetyCubeLogin.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/java/SafetyCubeLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Modules.java">
@@ -522,14 +501,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/uxui/VerticalScrollBar.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/uxui/VerticalScrollBar.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/risk-assessment/MatriceRisques.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/risk-assessment/MatriceRisques.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
@@ -543,116 +522,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/forms/FormPortalKneAsrFill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="method#IOpenForm#0;class#FormPortalKneAsrFill#0" />
-            <element signature="method#fill_form_filling#0;class#FormPortalKneAsrFill#0" />
-            <element signature="method#post_form_filling#0;class#FormPortalKneAsrFill#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/forms/FormCubeKneAsrCheck.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/forms/FormCubeKneAsrCheck.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/forms/FormCubeKneAsrCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="method#iOpenTheForm#0;class#FormCubeKneAsrCheck#0" />
-            <element signature="method#iCheckTheDataFilledInGeneralInformation#0;class#FormCubeKneAsrCheck#0" />
-            <element signature="e#1923#1945#0" />
-            <element signature="e#2509#2793#1" />
-            <element signature="e#2797#3081#1" />
-            <element signature="e#3428#3458#0" />
-            <element signature="e#3678#3831#1" />
-            <element signature="e#3835#3988#1" />
-            <element signature="e#4768#4937#1" />
-            <element signature="e#4941#5192#1" />
-            <element signature="e#5285#5375#0" />
-            <element signature="method#iCheckTheDataFilledInCrewConcernedByTheDiscretion#0;class#FormCubeKneAsrCheck#0" />
-            <element signature="method#iCheckTheDataFilledInVoyageDetails#0;class#FormCubeKneAsrCheck#0" />
-            <element signature="method#iCheckTheDataFilledInCaptainSReport#0;class#FormCubeKneAsrCheck#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/forms/FormPortalKneAsrlFill.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/forms/FormPortalKneAsrlFill.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/uxui/LoginIn.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/uxui/LoginIn.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/uxui/OpenModule.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/uxui/OpenModule.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1384">
           <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="22" />
           <folding>
             <element signature="e#60#258#0" />
             <element signature="e#262#454#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uxui/LoginIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uxui/OpenModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#iopenthemenuu#0;class#OpenModule#0" />
-            <element signature="method#iselectsafetyoccurence#0;class#OpenModule#0" />
-            <element signature="method#actionfollowupmodule#0;class#OpenModule#0" />
-            <element signature="method#findingmodule#0;class#OpenModule#0" />
-            <element signature="method#auditmanagementmodule#0;class#OpenModule#0" />
-            <element signature="method#impactmodule#0;class#OpenModule#0" />
-            <element signature="method#riskassessmentmodule#0;class#OpenModule#0" />
-            <element signature="method#publicationmodule#0;class#OpenModule#0" />
-            <element signature="method#standardmodule#0;class#OpenModule#0" />
-            <element signature="method#taxonomymodule#0;class#OpenModule#0" />
-            <element signature="method#dashboardmodule#0;class#OpenModule#0" />
-            <element signature="method#documentmanagementmodule#0;class#OpenModule#0" />
-            <element signature="method#indicatorslistmodule#0;class#OpenModule#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/risk-assessment/MatriceRisques.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="61" column="117" lean-forward="true" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="117" />
-          <folding>
-            <element signature="method#iselectmatricederisquetab#0;class#MatriceRisques#0" />
-            <element signature="method#iselectanonemptyeventbox#0;class#MatriceRisques#0" />
-            <element signature="method#ialsocomparetheprobabilitycolumns#0;class#MatriceRisques#0" />
-            <element signature="method#icomparewiththeamoutoflines#0;class#MatriceRisques#0" />
-            <element signature="method#icomparetheseverityvaluesfromthefilters#0;class#MatriceRisques#0" />
           </folding>
         </state>
       </provider>
@@ -678,28 +575,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/uxui/FiltersTabPresent.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="121" column="8" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        <state relative-caret-position="986">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/uxui/FiltersTabPresent.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/forms/FormCubeKneAsrCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state>
+          <folding>
+            <element signature="method#iOpenTheForm#0;class#FormCubeKneAsrCheck#0" />
+            <element signature="method#iCheckTheDataFilledInGeneralInformation#0;class#FormCubeKneAsrCheck#0" />
+            <element signature="method#iCheckTheDataFilledInCrewConcernedByTheDiscretion#0;class#FormCubeKneAsrCheck#0" />
+            <element signature="method#iCheckTheDataFilledInVoyageDetails#0;class#FormCubeKneAsrCheck#0" />
+            <element signature="method#iCheckTheDataFilledInCaptainSReport#0;class#FormCubeKneAsrCheck#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uxui/FiltersTabPresent.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/forms/FormPortalKneAsrFill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state>
+          <folding>
+            <element signature="method#IOpenForm#0;class#FormPortalKneAsrFill#0" />
+            <element signature="method#fill_form_filling#0;class#FormPortalKneAsrFill#0" />
+            <element signature="method#post_form_filling#0;class#FormPortalKneAsrFill#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/risk-assessment/MatriceRisques.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="61" column="117" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="117" />
+          <folding>
+            <element signature="method#iselectmatricederisquetab#0;class#MatriceRisques#0" />
+            <element signature="method#iselectanonemptyeventbox#0;class#MatriceRisques#0" />
+            <element signature="method#ialsocomparetheprobabilitycolumns#0;class#MatriceRisques#0" />
+            <element signature="method#icomparewiththeamoutoflines#0;class#MatriceRisques#0" />
+            <element signature="method#icomparetheseverityvaluesfromthefilters#0;class#MatriceRisques#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/VerticalScrollBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding>
+            <element signature="method#i_am_logged_in_verticalscrollbar#0;class#VerticalScrollBar#0" />
+            <element signature="method#i_check_if_the_vertical_scrollbar_exists#0;class#VerticalScrollBar#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="147" column="52" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/OpenModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#iopenthemenuu#0;class#OpenModule#0" />
+            <element signature="method#iselectsafetyoccurence#0;class#OpenModule#0" />
+            <element signature="method#actionfollowupmodule#0;class#OpenModule#0" />
+            <element signature="method#findingmodule#0;class#OpenModule#0" />
+            <element signature="method#auditmanagementmodule#0;class#OpenModule#0" />
+            <element signature="method#impactmodule#0;class#OpenModule#0" />
+            <element signature="method#riskassessmentmodule#0;class#OpenModule#0" />
+            <element signature="method#publicationmodule#0;class#OpenModule#0" />
+            <element signature="method#standardmodule#0;class#OpenModule#0" />
+            <element signature="method#taxonomymodule#0;class#OpenModule#0" />
+            <element signature="method#dashboardmodule#0;class#OpenModule#0" />
+            <element signature="method#documentmanagementmodule#0;class#OpenModule#0" />
+            <element signature="method#indicatorslistmodule#0;class#OpenModule#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/FiltersTabPresent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="44" column="84" lean-forward="true" selection-start-line="44" selection-start-column="84" selection-end-line="44" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

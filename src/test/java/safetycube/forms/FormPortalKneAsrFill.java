@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 
-public class FormPortalKneAsrFill extends Login{
+public class FormPortalKneAsrFill extends Login {
 
     private static WebDriver driver;
     private static JavascriptExecutor js;
@@ -20,7 +20,7 @@ public class FormPortalKneAsrFill extends Login{
     public void IOpenForm() {
         System.out.println("Selecting the form : ASR #form_52");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form_52")));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form_52")));
 
         WebElement FormButton = driver.findElement(By.xpath("//*[@id=\"form_52\"]"));
         FormButton.click();
@@ -30,7 +30,7 @@ public class FormPortalKneAsrFill extends Login{
     public void fill_form_filling() {
         System.out.println("Filling the form with data and an attached file");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.id("chr_1_2")));
 
         // General information
         WebElement FormTitle = driver.findElement(By.xpath("//*[@id=\"TITLE\"]"));
@@ -146,13 +146,13 @@ public class FormPortalKneAsrFill extends Login{
         SaveSend.click();
 
         // Modale
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]")));
+        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]")));
         WebElement OkPreSend = driver.findElement(By.xpath("//*[@id=\"confirmpresend\"]/div[1]/div[1]/div[3]/button[2]"));
         OkPreSend.click();
 
         WebElement OkConfirm = driver.findElement(By.xpath("//*[@id=\"confirmsavesend\"]/div/div/div[3]/button"));
-        wait.until(ExpectedConditions.visibilityOf(OkConfirm));
-        wait.until(ExpectedConditions.elementToBeClickable(OkConfirm));
+        Login.wait.until(ExpectedConditions.visibilityOf(OkConfirm));
+        Login.wait.until(ExpectedConditions.elementToBeClickable(OkConfirm));
         OkConfirm.click();
 
         Reporter.addStepLog("Posting the form");
