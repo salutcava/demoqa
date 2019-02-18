@@ -13,7 +13,7 @@ Feature: This test, will check the presence of the filters panel
   Scenario: Checking the presence of the filters panel in action followup module
     Given I am logging in to the cube
     And I open the menu
-    Then I select action-followup
+    Then I select action-followup-module
     And I check that the filters panel exists
 
   @filterstabfinding
@@ -56,7 +56,7 @@ Feature: This test, will check the presence of the filters panel
     Given I am logging in to the cube
     And I open the menu
     Then I select standard-module
-    And I check that the filters panel do not exists
+    And I check that the filters panel does not exist
 
   @filterstabtaxonomy
   Scenario: Checking the presence of the filters panel in taxonomy module
@@ -70,7 +70,7 @@ Feature: This test, will check the presence of the filters panel
     Given I am logging in to the cube
     And I open the menu
     Then I select dashboard-module
-    And I check that the filters panel do not exists
+    And I check that the filters panel does not exist
 
   @filterstabdocumentmanagement
   Scenario: Checking the presence of the filters panel in document management module
@@ -84,4 +84,4 @@ Feature: This test, will check the presence of the filters panel
     Given I am logging in to the cube
     And I open the menu
     Then I select indicators-list-module
-    And I check that the filters panel do not exists
+    And I check that the filters panel does not exist

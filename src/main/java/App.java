@@ -118,8 +118,8 @@ public class App extends Login{
      * @param driver Webdriver used for the test
      */
     static void close(WebDriver driver){
-        //driver.close();
-        //driver.quit();
+        driver.close();
+        driver.quit();
     }
 
     /**
