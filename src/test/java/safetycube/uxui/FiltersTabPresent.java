@@ -18,11 +18,10 @@ public class FiltersTabPresent extends Login {
     public void i_check_that_the_filters_panel_exists() throws IOException, InterruptedException {
         String element = "panel-action";
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("complex-list")));
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element)));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element)));
         int FilterPanel = Login.driver.findElements(By.id(element)).size();
         System.out.println(FilterPanel);
-        
+
 
         if(FilterPanel > 0){
             App.highlight(Login.driver, Login.driver.findElement(By.id(element)));
@@ -41,7 +40,6 @@ public class FiltersTabPresent extends Login {
     @And("^I check that the filters panel does not exist")
     public void i_check_that_the_filters_panel_do_not_exists() throws IOException, InterruptedException {
         String element = "panel-action";
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("complex-list")));
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element)));
         int FilterPanel = Login.driver.findElements(By.id(element)).size();
         System.out.println(FilterPanel);
@@ -50,6 +48,7 @@ public class FiltersTabPresent extends Login {
             App.highlight(Login.driver, Login.driver.findElement(By.id(element)));
         }
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("complex-list")));
         SaveScreenshot.screenshot(Login.driver,"filterpaneldonotexists");
 
         if(FilterPanel == 0){

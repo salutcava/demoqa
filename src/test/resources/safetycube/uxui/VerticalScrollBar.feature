@@ -1,4 +1,5 @@
 @safetycube
+
 Feature: Does the vertical scrollbar exists ?
   http://192.168.31.77/QA-SAFETYCUBE-MASTER/cube/#/dashboard
 

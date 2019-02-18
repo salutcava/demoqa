@@ -1,3 +1,4 @@
+@safetycube
 @filterstab
 
 Feature: This test, will check the presence of the filters panel
@@ -65,12 +66,12 @@ Feature: This test, will check the presence of the filters panel
     Then I select taxonomy-module
     And I check that the filters panel exists
 
-  @filterstabdashboard
-  Scenario: Checking the ABSENCE of the filters panel in dashboard module
-    Given I am logging in to the cube
-    And I open the menu
-    Then I select dashboard-module
-    And I check that the filters panel does not exist
+#  @filterstabdashboard
+#  Scenario: Checking the ABSENCE of the filters panel in dashboard module
+#    Given I am logging in to the cube
+#    And I open the menu
+#    Then I select dashboard-module
+#    And I check that the filters panel does not exist
 
   @filterstabdocumentmanagement
   Scenario: Checking the presence of the filters panel in document management module

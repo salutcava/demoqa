@@ -1,3 +1,5 @@
+@safetycube
+
 Feature: [KNE] ASR occurence check in cube as 'safety-line'
 
   @formcubekneasrcheck

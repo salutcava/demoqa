@@ -1,3 +1,5 @@
+@safetycube
+
 Feature: KNE_ASR Form filling in portal as 'safety-line'
 
   @formportalkneasrfill

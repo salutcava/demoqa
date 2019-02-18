@@ -1,3 +1,4 @@
+@safetycube
 @global
 @openmenu
 
