@@ -18,7 +18,8 @@ Checkout the project by using git :
     git clone http://192.168.31.22:9090/olivierlam/SafetyCube.git
 
 ## Environment setup
-Instructions are coming
+
+[Install Apache Maven](http://192.168.31.22:9090/olivierlam/SafetyCube/blob/master/installmvn.md)
 
 # Ready to go ?
 
