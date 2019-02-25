@@ -3,6 +3,7 @@
 ***Tests are made for french language***
 
  - [Installation](#installation)
+ - [Environment setup](#environment-setup)
  - [Tests screnarios](#test-scenarios)
  - [Extent report](#extent-report)
  - [Screenshot](#screenshot)
@@ -19,7 +20,12 @@ Checkout the project by using git :
 
 ## Environment setup
 
-[Install Apache Maven](http://192.168.31.22:9090/olivierlam/SafetyCube/blob/master/installmvn.md)
+IntelliJ IDEA is recommanded for the project. You wan download it on their website : https://www.jetbrains.com/idea/download/
+
+| Tool | Description |
+| -- | -- |
+| [Install Apache Maven](http://192.168.31.22:9090/olivierlam/SafetyCube/blob/master/installmvn.md) | Maven is a build automation tool used primarily for Java projects |
+| [Install Cucumber](https://www.jetbrains.com/help/idea/enabling-cucumber-support-in-project.html) | Cucumber runs automated acceptance tests written in a behavior-driven development (BDD) style. |
 
 # Ready to go ?
 
