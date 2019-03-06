@@ -85,9 +85,10 @@ public class FormCubeKneAsrCheck extends Login {
 
         Login.wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("chr_1_4")));
 
-        App.scrollTo(Login.driver,AirCraftTypeSelectOption);
-        App.highlight(Login.driver,AirCraftTypeSelectOption);
-        SaveScreenshot.screenshot(Login.driver, "aircrafttypevalue");
+        App.scrollTo(driver,AirCraftTypeSelectOption);
+        App.highlight(driver,AirCraftTypeSelectOption);
+        SaveScreenshot.screenshot(driver, "aircrafttypevalue");
+
         Reporter.addScreenCaptureFromPath(Props.getProperty("report.screenshot") + "aircrafttypevalue.png");
 
         if(AirCraftTypeSelectOptionText.contentEquals("A330-300")){

@@ -24,7 +24,7 @@ public class MatriceRisques extends Login{
 
         // This element is an element of the right matrice
         // We wait that the matrix is visible
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]")));
 
         WebElement MatriceTab = driver.findElement(By.xpath("/html/body/app-root/app-risk-assessment-list/section/div/ul/li[3]"));
         MatriceTab.click();
