@@ -1,20 +1,19 @@
 @safetycube
 @auditprogram
 @cube
+@auditgenerationfindings
 
-Feature: Audit generation des ecarts si actions ouvertes
+Feature: Verifier la generation des ecarts si des actions sont ouvertes quand on ferme un audit
   http://192.168.31.77/QA-SAFETYCUBE-MASTER/cube/#/dashboard
 
-  @matricerisques
-  Scenario: Verifier la coherence du nombre d'evenements et des filtres appliques
+  Scenario: I open an audit
 
     Given I am logging in to the cube
     And I open the menu
-    Then I select risk-assessment-module
-    And I select matrice de risques tab
-    Then I select a non empty event box
-    And I open the filter panel
-    And I compare the probability values from the filters
-    Then I compare the severity values from the table
-    And I compare the severity values from the filters
-    And I close the window
+    Then I select audit-management-module
+    And I open an audit
+
+  Scenario: I edit the audit
+    Given I edit the audit
+    And I close the webdriver
+
