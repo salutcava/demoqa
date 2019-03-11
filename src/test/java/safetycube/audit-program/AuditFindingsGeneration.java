@@ -54,28 +54,42 @@ public class AuditFindingsGeneration extends Login{
 
         System.out.println("I add a checklist");
         Reporter.addStepLog("I add a checklist");
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[1]/div[3]/div[1]/div[2]/a")));
-        WebElement AddChecklist = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[1]/div[3]/div[1]/div[2]/a"));
+
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[1]/div[3]/div[1]/div[2]/a")));
+        //WebElement AddChecklist = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[1]/div[3]/div[1]/div[2]/a"));
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'des checklists')]")));
+        WebElement AddChecklist = driver.findElement(By.xpath("//*[contains(text(), 'des checklists')]"));
+
         App.scrollTo(driver,AddChecklist);
         App.highlight(driver,AddChecklist);
 
         SaveScreenshot.screenshot(driver,"AddChecklist");
         AddChecklist.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'checklists')]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"addAuditChecklist\"]")));
         SaveScreenshot.screenshot(driver,"ChecklistModale");
 
         System.out.println("I add a checklist");
         Reporter.addStepLog("I add a checklist");
 
-        WebElement ChecklistInputt = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[1]/label/input"));
-        List<WebElement> ChecklistInputs = driver.findElements(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[1]/label/input"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]")));
+        WebElement ChecklistLi = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]"));
+        App.highlight(driver,ChecklistLi);
 
-        for (WebElement ChecklistInput : ChecklistInputs) {
-            if (!ChecklistInputt.getAttribute("disabled").equals("false")) {
-                ChecklistInput.click();
+        WebElement ChecklistLiInput = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]/label/span"));
+        ChecklistLiInput.click();
+
+        SaveScreenshot.screenshot(driver,"ChecklistInput");
+
+        //List<WebElement> ChecklistInputs = driver.findElements(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[1]/label/input"));
+        //for (WebElement ChecklistInputFor : ChecklistInputs) {
+        /*for (int i = 1;i<ChecklistInputs.size();i++) {
+            if (!App.isAttribtuePresent(ChecklistInputs.get(i),"disabled")){
+                System.out.println("attr disabled");
+                ChecklistInputs.get(i).click();
                 break;
             }
-        }
+        }*/
     }
 }

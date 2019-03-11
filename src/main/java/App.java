@@ -163,4 +163,16 @@ public class App extends Login{
         }
         return null;
     }
+
+    static boolean isAttribtuePresent(WebElement element, String attribute) {
+        boolean result = false;
+        try {
+            String value = element.getAttribute(attribute);
+            if (value != null){
+                result = true;
+            }
+        } catch (Exception e) {}
+
+        return result;
+    }
 }
