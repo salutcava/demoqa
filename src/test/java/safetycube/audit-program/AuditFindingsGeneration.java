@@ -74,22 +74,26 @@ public class AuditFindingsGeneration extends Login{
         Reporter.addStepLog("I add a checklist");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]")));
-        WebElement ChecklistLi = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]"));
-        App.highlight(driver,ChecklistLi);
+        //WebElement ChecklistLi = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]"));
+        //App.highlight(driver,ChecklistLi);
 
-        WebElement ChecklistLiInput = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]/label/span"));
-        ChecklistLiInput.click();
+        //WebElement ChecklistLiInput = driver.findElement(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[3]/label/span"));
+        //ChecklistLi.click();
 
+        List<WebElement> ChecklistInputs = driver.findElements(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li/label/input"));
+         for(int i = 0;i<ChecklistInputs.size();i++){
+            if(!ChecklistInputs.get(i).isSelected()){
+                System.out.println(!ChecklistInputs.get(i).isSelected());
+                App.highlight(driver,ChecklistInputs.get(i));
+                ChecklistInputs.get(i).click();
+            }
+            break;
+         }
         SaveScreenshot.screenshot(driver,"ChecklistInput");
 
-        //List<WebElement> ChecklistInputs = driver.findElements(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li[1]/label/input"));
-        //for (WebElement ChecklistInputFor : ChecklistInputs) {
-        /*for (int i = 1;i<ChecklistInputs.size();i++) {
-            if (!App.isAttribtuePresent(ChecklistInputs.get(i),"disabled")){
-                System.out.println("attr disabled");
-                ChecklistInputs.get(i).click();
-                break;
-            }
-        }*/
+        // click on the save button
+        WebElement SendList = driver.findElement(By.xpath("//*[@id=\"btnSendList\"]"));
+        App.highlight(driver,SendList);
+        //SendList.click();
     }
 }

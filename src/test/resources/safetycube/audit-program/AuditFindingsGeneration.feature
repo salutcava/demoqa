@@ -15,5 +15,5 @@ Feature: Verifier la generation des ecarts si des actions sont ouvertes quand on
 
   Scenario: I edit the audit
     Given I edit the audit
-    And I close the webdriver
+    #And I close the webdriver
 
