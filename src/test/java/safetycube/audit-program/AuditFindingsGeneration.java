@@ -87,7 +87,7 @@ public class AuditFindingsGeneration extends Login{
                 App.highlight(driver,ChecklistInputs.get(i));
                 ChecklistInputs.get(i).click();
             }
-            break;
+            //break;
          }
         SaveScreenshot.screenshot(driver,"ChecklistInput");
 
