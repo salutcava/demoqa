@@ -100,9 +100,32 @@ public class AuditFindingsGeneration extends Login{
         App.highlight(driver,ChecklistElement);
         ChecklistElement.click();
 
-        SaveScreenshot.screenshot(driver,"Checklist Page");
-
-
+        SaveScreenshot.screenshot(driver,"ChecklistPage");
     }
 
+    @Then("^I edit the checklist")
+    public void ieditthechecklist() throws IOException, InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
+
+        WebElement UnfoldButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]"));
+        WebElement EditButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[3]"));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
+        App.scrollTo(driver,UnfoldButton);
+
+        wait.until(ExpectedConditions.elementToBeClickable(UnfoldButton));
+        App.highlight(driver,UnfoldButton);
+        UnfoldButton.click();
+        SaveScreenshot.screenshot(driver,"UnfoldButton");
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/app-loader")));
+        App.highlight(driver,EditButton);
+        EditButton.click();
+        SaveScreenshot.screenshot(driver,"EditButton");
+    }
+
+    @And("^I add a non conformity")
+    public void iaddanonconformity(){
+        WebElement auditSectionRoot = driver.findElement(By.cssSelector(""));
+    }
 }
