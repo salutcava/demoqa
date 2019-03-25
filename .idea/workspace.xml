@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ab81677-b372-415a-ba65-2cc659989143" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,33 +17,45 @@
     <splitter split-orientation="horizontal" split-proportion="0.4371002">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="71" selection-start-line="71" selection-end-line="71" />
+                <state relative-caret-position="153">
+                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#iopenanaudit#0;class#AuditFindingsGeneration#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/CloseWebDriver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#153#154#0" expanded="true" />
+                    <element signature="e#186#187#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+                <state relative-caret-position="102">
+                  <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
                   <folding>
                     <element signature="method#login_cube#0;class#Login#0" />
                     <element signature="method#login_admin#0;class#Login#0" />
@@ -56,8 +68,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2788">
-                  <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#4078#4079#0" expanded="true" />
@@ -95,13 +107,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="128" column="73" lean-forward="true" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
+                <state relative-caret-position="373">
+                  <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#iopenanaudit#0;class#AuditFindingsGeneration#0" />
-                    <element signature="e#5802#5803#0" expanded="true" />
-                    <element signature="e#5886#5887#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -227,11 +237,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/safetycube/risk-assessment/MatriceRisques.java" />
         <option value="$PROJECT_DIR$/src/test/java/safetycube/uxui/FiltersTabPresent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/CloseWebDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" />
         <option value="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
       </list>
     </option>
   </component>
@@ -243,10 +253,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="647" />
+    <option name="y" value="-1073" />
+    <option name="width" value="782" />
+    <option name="height" value="596" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -434,7 +444,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-193" y="-1088" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22014925" />
@@ -452,7 +462,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32850242" />
-      <window_info anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" sideWeight="0.49733475" weight="0.3800322" />
+      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" sideWeight="0.49733475" visible="true" weight="0.19399786" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -682,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/OpenModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -775,44 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CloseWebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="method#login_cube#0;class#Login#0" />
-            <element signature="method#login_admin#0;class#Login#0" />
-            <element signature="method#login_portal#0;class#Login#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="173" column="32" selection-start-line="173" selection-start-column="32" selection-end-line="173" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4078#4079#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,10 +799,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4078#4079#0" expanded="true" />
+            <element signature="e#4113#4114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="373">
+          <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#iopenanaudit#0;class#AuditFindingsGeneration#0" />
@@ -844,10 +822,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CloseWebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="method#login_cube#0;class#Login#0" />
+            <element signature="method#login_admin#0;class#Login#0" />
+            <element signature="method#login_portal#0;class#Login#0" />
+          </folding>
         </state>
       </provider>
     </entry>

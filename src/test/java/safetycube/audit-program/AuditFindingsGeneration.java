@@ -105,6 +105,8 @@ public class AuditFindingsGeneration extends Login{
 
     @Then("^I edit the checklist")
     public void ieditthechecklist() throws IOException, InterruptedException {
+        System.out.println("I edit the checklist");
+        Reporter.addStepLog("I edit the checklist");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
 
         WebElement UnfoldButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]"));
@@ -113,19 +115,26 @@ public class AuditFindingsGeneration extends Login{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
         App.scrollTo(driver,UnfoldButton);
 
-        wait.until(ExpectedConditions.elementToBeClickable(UnfoldButton));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
         App.highlight(driver,UnfoldButton);
         UnfoldButton.click();
+
+        System.out.println("I click on the unfold button");
+        Reporter.addStepLog("I click on the unfold button");
         SaveScreenshot.screenshot(driver,"UnfoldButton");
 
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/app-loader")));
+        wait.until(ExpectedConditions.elementToBeClickable(EditButton));
         App.highlight(driver,EditButton);
         EditButton.click();
+
+        System.out.println("I click on the edit button");
+        Reporter.addStepLog("I click on the edit button");
         SaveScreenshot.screenshot(driver,"EditButton");
     }
 
     @And("^I add a non conformity")
     public void iaddanonconformity(){
-        WebElement auditSectionRoot = driver.findElement(By.cssSelector(""));
+        //WebElement auditSectionRoot = driver.findElement(By.cssSelector(""));
     }
 }
