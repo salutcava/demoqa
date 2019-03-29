@@ -136,11 +136,14 @@ public class AuditFindingsGeneration extends Login{
 
     @And("^I add a non conformity")
     public void iaddanonconformity() throws InterruptedException, IOException {
-        List auditSectionRoot = driver.findElements(By.className("audit-answers-list"));
-        System.out.println(auditSectionRoot.get(0));
-        App.generateXPATH(auditSectionRoot.get(0));
+        WebElement auditSectionRoot = driver.findElement(By.className("audit-answers-list"));
+        String auditSectionRootString = App.generateXPATH(auditSectionRoot,"");
+        WebElement auditSectionRootXpath = driver.findElement(By.xpath(auditSectionRootString));
+
+        System.out.println(App.generateXPATH(auditSectionRoot,""));
         //wait.until(ExpectedConditions.visibilityOf(auditSectionRoot));
-        App.highlight(driver,auditSectionRoot);
+        App.highlight(driver,auditSectionRootXpath);
+        auditSectionRootXpath.click();
         SaveScreenshot.screenshot(driver,"bonjour");
     }
 }
