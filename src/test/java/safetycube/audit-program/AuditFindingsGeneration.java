@@ -48,11 +48,14 @@ public class AuditFindingsGeneration extends Login{
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"collapsePanelRef\"]/div/button")));
         WebElement EditButton = driver.findElement(By.xpath("//*[@id=\"collapsePanelRef\"]/div/button"));
 
-        App.highlight(driver,EditButton);
-        SaveScreenshot.screenshot(driver,"editbutton");
+        App.highlight(driver, EditButton);
+        SaveScreenshot.screenshot(driver, "editbutton");
 
         EditButton.click();
+    }
 
+    @And("^I add a checklist")
+    public void iaddachecklist() throws InterruptedException, IOException {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'des checklists')]")));
         WebElement AddChecklist = driver.findElement(By.xpath("//*[contains(text(), 'des checklists')]"));
 
@@ -109,6 +112,7 @@ public class AuditFindingsGeneration extends Login{
         Reporter.addStepLog("I edit the checklist");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
 
+        WebElement loader = driver.findElement(By.xpath("/html/body/app-root/app-check-list/app-loader"));
         WebElement UnfoldButton = driver.findElement(By.cssSelector("body > app-root > app-check-list > section > div > div > div > button:nth-child(2)"));
         WebElement EditButton = driver.findElement(By.cssSelector("body > app-root > app-check-list > section > div > div > div > button:nth-child(3)"));
 
@@ -116,8 +120,8 @@ public class AuditFindingsGeneration extends Login{
         App.scrollTo(driver,UnfoldButton);
 
 
-        //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/app-loader")));
-        //wait.until(ExpectedConditions.elementToBeClickable(EditButton));
+        wait.until(ExpectedConditions.invisibilityOf(loader));
+        wait.until(ExpectedConditions.elementToBeClickable(EditButton));
         App.highlight(driver,EditButton);
         EditButton.click();
 
@@ -125,7 +129,9 @@ public class AuditFindingsGeneration extends Login{
         Reporter.addStepLog("I click on the edit button");
         SaveScreenshot.screenshot(driver,"EditButton");
 
+        wait.until(ExpectedConditions.invisibilityOf(loader));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/app-root/app-check-list/section/div/div/div/button[2]")));
+        wait.until(ExpectedConditions.elementToBeClickable(UnfoldButton));
         App.highlight(driver,UnfoldButton);
         UnfoldButton.click();
 
@@ -136,14 +142,52 @@ public class AuditFindingsGeneration extends Login{
 
     @And("^I add a non conformity")
     public void iaddanonconformity() throws InterruptedException, IOException {
-        WebElement auditSectionRoot = driver.findElement(By.className("audit-answers-list"));
-        String auditSectionRootString = App.generateXPATH(auditSectionRoot,"");
+
+        WebElement loader = driver.findElement(By.xpath("/html/body/app-root/app-check-list/app-loader"));
+
+        System.out.println("I find the farest child");
+        Reporter.addStepLog("I find the farest child");
+
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("app-audit-answers > ul > li:nth-child(1) > a > span")));
+        List<WebElement> auditSectionRoot = driver.findElements(By.cssSelector("app-audit-answers > ul > li:nth-child(1) > a > span"));
+
+        WebElement auditSectionRootElement = auditSectionRoot.get(1);
+        String auditSectionRootString = App.generateXPATH(auditSectionRootElement,"");
         WebElement auditSectionRootXpath = driver.findElement(By.xpath(auditSectionRootString));
 
-        System.out.println(App.generateXPATH(auditSectionRoot,""));
-        //wait.until(ExpectedConditions.visibilityOf(auditSectionRoot));
+        //System.out.println(App.generateXPATH(auditSectionRoot,""));
+        App.highlight(driver,auditSectionRootElement);
+
+        System.out.println("Waiting that the loader disapears");
+        wait.until(ExpectedConditions.invisibilityOf(loader));
+
+        System.out.println("I click the farest child");
+        Reporter.addStepLog("I click the farest child");
         App.highlight(driver,auditSectionRootXpath);
+        wait.until(ExpectedConditions.elementToBeClickable(auditSectionRootXpath));
         auditSectionRootXpath.click();
-        SaveScreenshot.screenshot(driver,"bonjour");
+        SaveScreenshot.screenshot(driver,"auditSectionRootXpath");
+
+        System.out.println("I select the option NonDocumenteNonImplemente");
+        Reporter.addStepLog("I select the option NonDocumenteNonImplemente");
+        WebElement NonDocumenteNonImplemente = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/app-audit-answer-form/div[1]/div[9]/div[1]/select"));
+        WebElement NonDocumenteNonImplementeOption = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/app-audit-answer-form/div[1]/div[9]/div[1]/select/option[5]"));
+
+        App.scrollTo(driver,NonDocumenteNonImplemente);
+        App.highlight(driver,NonDocumenteNonImplemente);
+
+        NonDocumenteNonImplemente.click();
+        NonDocumenteNonImplementeOption.click();
+        SaveScreenshot.screenshot(driver,"NonDocumenteNonImplemente");
+
+        WebElement SaveButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/app-audit-answer-form/div[1]/div[11]/button[1]"));
+        SaveButton.click();
+    }
+
+    @Then("^I change the status")
+    public void ichangethestatus() throws InterruptedException {
+        WebElement DetailsButton = driver.findElement(By.xpath("//*[contains(text),'D[eé]tails']"));
+        App.highlight(driver,DetailsButton);
+        DetailsButton.click();
     }
 }

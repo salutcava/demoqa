@@ -16,7 +16,7 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
@@ -49,7 +49,7 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
@@ -79,7 +79,7 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
