@@ -20,5 +20,5 @@ Feature: Verifier la generation des ecarts si des actions sont ouvertes quand on
     And I add a non conformity
     Given I edit the audit
     Then I change the status
-    And I close the webdriver
+    #And I close the webdriver
 

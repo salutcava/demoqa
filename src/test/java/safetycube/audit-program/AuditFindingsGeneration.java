@@ -15,6 +15,8 @@ import java.util.List;
 
 public class AuditFindingsGeneration extends Login{
 
+    private String URL = driver.getCurrentUrl();
+
     @And("^I open an audit")
     public void iopenanaudit() throws IOException, InterruptedException {
         System.out.println("I open an audit");
@@ -42,6 +44,7 @@ public class AuditFindingsGeneration extends Login{
 
     @Given("^I edit the audit")
     public void ieditanaudit() throws InterruptedException, IOException {
+        String URL = driver.getCurrentUrl();
         System.out.println("I edit the audit");
         Reporter.addStepLog("I edit the audit");
 
@@ -182,12 +185,36 @@ public class AuditFindingsGeneration extends Login{
 
         WebElement SaveButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/app-audit-answer-form/div[1]/div[11]/button[1]"));
         SaveButton.click();
+        SaveScreenshot.screenshot(driver,"NonDocumenteNonImplementeSaved");
+
+        WebElement close = driver.findElement(By.xpath("//*[@id=\"modalConfirm\"]/div/div/div[1]/button"));
+        close.click();
+
+        //going back to the audit
+        driver.get(URL);
     }
 
     @Then("^I change the status")
-    public void ichangethestatus() throws InterruptedException {
-        WebElement DetailsButton = driver.findElement(By.xpath("//*[contains(text),'D[eé]tails']"));
+    public void ichangethestatus() throws InterruptedException, IOException {
+        WebElement DetailsButton = driver.findElement(By.xpath("//*[contains(text(),'tails')]"));
         App.highlight(driver,DetailsButton);
         DetailsButton.click();
+
+        List<WebElement> StatusCheckbox = driver.findElements(By.xpath("//*[@id=\"modalDetail\"]/div/div/div[2]/table/tbody/tr/td[1]/input"));
+        System.out.println(StatusCheckbox.size());
+        int i = 0;
+        while(i>StatusCheckbox.size()){
+            System.out.println("Is checked : " + StatusCheckbox.get(i).isSelected());
+            if(!StatusCheckbox.get(i).isSelected()){
+                StatusCheckbox.get(i).click();
+                List<WebElement> ConfirmButtons = driver.findElements(By.xpath("//*[@id=\"modalFindingInfo\"]/div/div/div[3]/button[2]"));
+                WebElement ConfirmButton = driver.findElement(By.xpath("//*[@id=\"modalFindingInfo\"]/div/div/div[3]/button[2]"));
+
+                if(ConfirmButtons.size() > 0){
+                    ConfirmButton.click();
+                }
+            }
+        }
+        SaveScreenshot.screenshot(driver,"StatusCheckox");
     }
 }
