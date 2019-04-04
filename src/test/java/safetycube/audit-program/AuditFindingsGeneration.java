@@ -2,13 +2,10 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.util.List;
@@ -78,7 +75,7 @@ public class AuditFindingsGeneration extends Login{
 
         List<WebElement> ChecklistInputs = driver.findElements(By.xpath("//*[@id=\"addAuditChecklist\"]/div/div/div[3]/ul/li/label/input"));
          for(int i = 0;i<ChecklistInputs.size();i++){
-            if(!App.isAttribtuePresent(ChecklistInputs.get(i), "disabled")){
+            if(!App.isAttributePresent(ChecklistInputs.get(i), "disabled")){
                 App.addClass(driver, "olivier", ChecklistInputs.get(i));
                 App.highlight(driver,ChecklistInputs.get(i));
                 ChecklistInputs.get(i).click();
@@ -158,14 +155,13 @@ public class AuditFindingsGeneration extends Login{
         String auditSectionRootString = App.generateXPATH(auditSectionRootElement,"");
         WebElement auditSectionRootXpath = driver.findElement(By.xpath(auditSectionRootString));
 
-        //System.out.println(App.generateXPATH(auditSectionRoot,""));
         App.highlight(driver,auditSectionRootElement);
 
         System.out.println("Waiting that the loader disapears");
         wait.until(ExpectedConditions.invisibilityOf(loader));
 
-        System.out.println("I click the farest child");
-        Reporter.addStepLog("I click the farest child");
+        System.out.println("I select a child");
+        Reporter.addStepLog("I select a child");
         App.highlight(driver,auditSectionRootXpath);
         wait.until(ExpectedConditions.elementToBeClickable(auditSectionRootXpath));
         auditSectionRootXpath.click();
@@ -179,6 +175,8 @@ public class AuditFindingsGeneration extends Login{
         App.scrollTo(driver,NonDocumenteNonImplemente);
         App.highlight(driver,NonDocumenteNonImplemente);
 
+        System.out.println("I choose NonDocumenteNonImplemente");
+        Reporter.addStepLog("I choose NonDocumenteNonImplemente");
         NonDocumenteNonImplemente.click();
         NonDocumenteNonImplementeOption.click();
         SaveScreenshot.screenshot(driver,"NonDocumenteNonImplemente");
@@ -191,6 +189,8 @@ public class AuditFindingsGeneration extends Login{
         close.click();
 
         //going back to the audit
+        System.out.println("Going back to the audit");
+        System.out.println(URL);
         driver.get(URL);
     }
 
@@ -201,20 +201,31 @@ public class AuditFindingsGeneration extends Login{
         DetailsButton.click();
 
         List<WebElement> StatusCheckbox = driver.findElements(By.xpath("//*[@id=\"modalDetail\"]/div/div/div[2]/table/tbody/tr/td[1]/input"));
-        System.out.println(StatusCheckbox.size());
+        System.out.println("StatusCheckbox.size() : " + StatusCheckbox.size());
+
         int i = 0;
-        while(i>StatusCheckbox.size()){
-            System.out.println("Is checked : " + StatusCheckbox.get(i).isSelected());
+        while(i<StatusCheckbox.size()){
+            System.out.println("While " + i);
+            System.out.println("Checkbox is checked : " + StatusCheckbox.get(i).isSelected());
+
+            // If the checkbox is not checked, we will check it
             if(!StatusCheckbox.get(i).isSelected()){
-                StatusCheckbox.get(i).click();
-                List<WebElement> ConfirmButtons = driver.findElements(By.xpath("//*[@id=\"modalFindingInfo\"]/div/div/div[3]/button[2]"));
+                WebElement StatusCheckboxFromXpath = driver.findElement(By.xpath(App.generateXPATH(StatusCheckbox.get(i),"")));
+                App.highlight(driver,StatusCheckboxFromXpath);
+
                 WebElement ConfirmButton = driver.findElement(By.xpath("//*[@id=\"modalFindingInfo\"]/div/div/div[3]/button[2]"));
 
-                if(ConfirmButtons.size() > 0){
+                if(App.isClickable(driver,ConfirmButton)){
                     ConfirmButton.click();
                 }
+
+                StatusCheckboxFromXpath.click();
             }
+            i++;
+            SaveScreenshot.screenshot(driver,"StatusCheckox"+i);
         }
-        SaveScreenshot.screenshot(driver,"StatusCheckox");
+
+        WebElement StatusConfirmButton = driver.findElement(By.xpath("//*[@id=\"btnStatusChange\"]"));
+        StatusConfirmButton.click();
     }
 }

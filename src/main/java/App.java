@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -164,7 +165,13 @@ public class App extends Login{
         return null;
     }
 
-    static boolean isAttribtuePresent(WebElement element, String attribute) {
+    /**
+     * Check if an element has a certain attribute
+     * @param element
+     * @param attribute
+     * @return
+     */
+    static boolean isAttributePresent(WebElement element, String attribute) {
         boolean result = false;
         try {
             String value = element.getAttribute(attribute);
@@ -174,5 +181,38 @@ public class App extends Login{
         } catch (Exception e) {}
 
         return result;
+    }
+
+    /**
+     * Check if an element has a certain class
+     * @param element
+     * @return
+     */
+    static public boolean hasClass(WebElement element, String cssClass) {
+        String classes = element.getAttribute("class");
+        for (String c : classes.split(" ")) {
+            if (c.equals(cssClass)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Check if element is clickable
+     * @param element
+     * @param driver
+     * @return
+     */
+    public static boolean isClickable(WebDriver driver,WebElement element)
+    {
+        try{
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
     }
 }
