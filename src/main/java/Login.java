@@ -16,20 +16,21 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
         Login.driver.get(Props.getProperty("server.safetycube.cube"));
-        System.out.println("Exec a wait");
 
-        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
-        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")));
 
-        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line-eric");
-        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Lesneven29");
+        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
+        Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
 
-        WebElement LoginButton = Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button[1]"));
+        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line-eric");
+        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Lesneven29");
+
+        WebElement LoginButton = Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button"));
         SaveScreenshot.screenshot(driver, "loginpagecube");
 
         System.out.println("Click on the login button");
@@ -48,7 +49,7 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
@@ -78,7 +79,7 @@ public class Login{
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 30);
+        wait = new WebDriverWait(driver, 60);
 
         Login.driver.manage().window().maximize();
 
