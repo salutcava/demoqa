@@ -2,6 +2,7 @@ import com.cucumber.listener.Reporter;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
@@ -101,6 +102,7 @@ public class AuditFindingsGeneration extends Login{
 
         App.scrollTo(driver,ChecklistElement);
         App.highlight(driver,ChecklistElement);
+        wait.until(ExpectedConditions.visibilityOf(ChecklistElement));
         ChecklistElement.click();
 
         SaveScreenshot.screenshot(driver,"ChecklistPage");
@@ -151,7 +153,7 @@ public class AuditFindingsGeneration extends Login{
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("app-audit-answers > ul > li:nth-child(1) > a > span")));
         List<WebElement> auditSectionRoot = driver.findElements(By.cssSelector("app-audit-answers > ul > li:nth-child(1) > a > span"));
 
-        WebElement auditSectionRootElement = auditSectionRoot.get(1);
+        WebElement auditSectionRootElement = auditSectionRoot.get(0);
         String auditSectionRootString = App.generateXPATH(auditSectionRootElement,"");
         WebElement auditSectionRootXpath = driver.findElement(By.xpath(auditSectionRootString));
 
@@ -182,10 +184,12 @@ public class AuditFindingsGeneration extends Login{
         SaveScreenshot.screenshot(driver,"NonDocumenteNonImplemente");
 
         WebElement SaveButton = driver.findElement(By.xpath("/html/body/app-root/app-check-list/section/div/app-audit-answer-form/div[1]/div[11]/button[1]"));
+        wait.until(ExpectedConditions.elementToBeClickable(SaveButton));
         SaveButton.click();
         SaveScreenshot.screenshot(driver,"NonDocumenteNonImplementeSaved");
 
         WebElement close = driver.findElement(By.xpath("//*[@id=\"modalConfirm\"]/div/div/div[1]/button"));
+        wait.until(ExpectedConditions.elementToBeClickable(close));
         close.click();
 
         //going back to the audit
@@ -198,6 +202,7 @@ public class AuditFindingsGeneration extends Login{
     public void ichangethestatus() throws InterruptedException, IOException {
         WebElement DetailsButton = driver.findElement(By.xpath("//*[contains(text(),'tails')]"));
         App.highlight(driver,DetailsButton);
+        wait.until(ExpectedConditions.elementToBeClickable(DetailsButton));
         DetailsButton.click();
 
         List<WebElement> StatusCheckbox = driver.findElements(By.xpath("//*[@id=\"modalDetail\"]/div/div/div[2]/table/tbody/tr/td[1]/input"));
@@ -216,16 +221,57 @@ public class AuditFindingsGeneration extends Login{
                 WebElement ConfirmButton = driver.findElement(By.xpath("//*[@id=\"modalFindingInfo\"]/div/div/div[3]/button[2]"));
 
                 if(App.isClickable(driver,ConfirmButton)){
+                    System.out.println("App.hasClass : " + App.hasClass(ConfirmButton,"in"));
+                    System.out.println("ConfirmButton.getAttribute : " + ConfirmButton.getAttribute("class"));
+                    wait.until(ExpectedConditions.elementToBeClickable(ConfirmButton));
                     ConfirmButton.click();
+                }else{
+                    System.out.println("nothing");
                 }
 
+                wait.until(ExpectedConditions.elementToBeClickable(StatusCheckboxFromXpath));
                 StatusCheckboxFromXpath.click();
             }
-            i++;
             SaveScreenshot.screenshot(driver,"StatusCheckox"+i);
+            i++;
         }
 
         WebElement StatusConfirmButton = driver.findElement(By.xpath("//*[@id=\"btnStatusChange\"]"));
+        wait.until(ExpectedConditions.elementToBeClickable(StatusConfirmButton));
         StatusConfirmButton.click();
+
+        WebElement SaveButton = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[2]/div/button[2]"));
+        wait.until(ExpectedConditions.elementToBeClickable(SaveButton));
+        SaveButton.click();
+
+        WebElement loader = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/app-loader/div"));
+        wait.until(ExpectedConditions.invisibilityOfAllElements(loader));
+    }
+
+    @And("^I compare non compliances and findings")
+    public void icomparenoncompliancesfindings() throws InterruptedException, IOException{
+        System.out.println("I compare non compliances and findings");
+        Reporter.addStepLog("I compare non compliances and findings");
+
+        WebElement NonComplianceAmountWebElement = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[1]/div[4]/div/table/tbody/tr[2]/td[2]"));
+        String NonComplianceAmount = NonComplianceAmountWebElement.getText();
+        App.highlight(driver,NonComplianceAmountWebElement);
+        SaveScreenshot.screenshot(driver,"NonComplianceAmount");
+
+        WebElement FindingsButton = driver.findElement(By.xpath("/html/body/app-root/app-audit-form/div[3]/section/form/div[3]/div[2]/div/button[6]"));
+        String FindingsAmount = FindingsButton.getAttribute("innerHTML");
+        App.highlight(driver,FindingsButton);
+        SaveScreenshot.screenshot(driver,"FindingsButton");
+
+        System.out.println("NonComplianceAmount : " + NonComplianceAmount);
+        System.out.println("FindingsAmount : " + FindingsAmount);
+
+        if(FindingsAmount.contains(NonComplianceAmount)){
+            System.out.println("NonComplianceAmount and FindingsAmount are matching");
+            Reporter.addStepLog("I compare non compliances and findings");
+
+            Assert.assertTrue("NonComplianceAmount and FindingsAmount are matching",FindingsAmount.contains(NonComplianceAmount));
+        }
+        SaveScreenshot.screenshot(driver,"AssertTrueNonComplianceFindings");
     }
 }

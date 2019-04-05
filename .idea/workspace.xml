@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ab81677-b372-415a-ba65-2cc659989143" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +17,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.43948564">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -47,7 +47,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="424">
@@ -89,8 +89,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
+                <state relative-caret-position="214">
+                  <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#iopenanaudit#0;class#AuditFindingsGeneration#0" />
@@ -116,8 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SafetyOccurence</find>
-      <find>visi</find>
       <find>contains</find>
       <find>FEATURE</find>
       <find>//*[@id=&quot;list-filter_1549290795906_4a60d6bb_6d5bbcab_a3ab94ab_0b7293af&quot;]/div[1]/ul/li[1]/app-filter-element/div/span[2]/span//*[@id=&quot;list-filter_1549290795906_4a60d6bb_6d5bbcab_a3ab94ab_0b7293af&quot;]/div[1]/ul/li[1]/app-filter-element/div/span[2]/span</find>
@@ -146,6 +144,8 @@
       <find>EventCountValue</find>
       <find>findElements</find>
       <find>close(</find>
+      <find>load²</find>
+      <find>click</find>
     </findStrings>
     <replaceStrings>
       <replace>App.highlight(driver,</replace>
@@ -222,8 +222,8 @@
         <option value="$PROJECT_DIR$/src/main/java/CloseWebDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/safetycube/risk-assessment/MatriceRisques.java" />
         <option value="$PROJECT_DIR$/src/main/java/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature" />
         <option value="$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java" />
       </list>
     </option>
@@ -236,8 +236,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
-    <option name="y" value="-1107" />
+    <option name="x" value="492" />
+    <option name="y" value="-889" />
     <option name="width" value="782" />
     <option name="height" value="596" />
   </component>
@@ -451,7 +451,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" sideWeight="0.49733475" visible="true" weight="0.3954984" />
+      <window_info active="true" anchor="bottom" x="0" y="0" width="1366" height="738" id="Terminal" order="8" sideWeight="0.49733475" visible="true" weight="0.25187567" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -788,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/uxui/LoginIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -841,10 +834,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/safetycube/audit-program/AuditFindingsGeneration.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/safetycube/audit-program/AuditFindingsGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="229" column="5" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
+        <state relative-caret-position="214">
+          <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#iopenanaudit#0;class#AuditFindingsGeneration#0" />
