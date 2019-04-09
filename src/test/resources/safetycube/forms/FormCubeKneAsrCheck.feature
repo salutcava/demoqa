@@ -13,4 +13,4 @@ Feature: [KNE] ASR occurence check in cube as 'safety-line'
     And I check the data filled in crew concerned by the discretion formcubekneasrcheck
     Then I check the data filled in voyage details formcubekneasrcheck
     And I check the data filled in captain's report formcubekneasrcheck
-    And I close the window
+    And I close the webdriver

@@ -17,4 +17,4 @@ Feature: Matrice des risques
     And I compare the probability values from the filters
     Then I compare the severity values from the table
     And I compare the severity values from the filters
-    And I close the window
+    And I close the webdriver
