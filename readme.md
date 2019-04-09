@@ -33,11 +33,12 @@ IntelliJ IDEA is recommanded for the project. You wan download it on their websi
 
 | # | Name | Tag | Description |
 | -- | -- | -- | -- |
-| 1 | Safety Portal Login | @successfulportallogin | Login to portal as Safety-Line |
-| 2 | Safety Cube Login | @successfulcubelogin | Login to cube as Safety-Line |
-| 3 | Portal KNE ASR Form filling | @formportalkneasrfill| Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
-| 4 | Cube KNE ASR Form checking | @formcubekneasrcheck| Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
-| 5 | Cube Risks Matrix | @matricerisques | Checks if filters and values in the table results are matching. And also if the tab has changed. |
+| [1](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/1) | Safety Portal Login | @successfulportallogin | Login to portal as Safety-Line |
+| [2](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/2) | Safety Cube Login | @successfulcubelogin | Login to cube as Safety-Line |
+| [4](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/7) | Portal KNE ASR Form filling | @formportalkneasrfill| Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
+| [4](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/8) | Cube KNE ASR Form checking | @formcubekneasrcheck| Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
+| [5](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/15) | Cube Risks Matrix | @matricerisques | Checks if filters and values in the table results are matching. And also if the tab has changed. |
+| [6](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/21) | Audit finding generation | @auditgenerationfindings | Checks if findings are created correctly. As when you close an audit and there are still non compliance done |
 
 ### How to launch the tests scenarios ?
 
