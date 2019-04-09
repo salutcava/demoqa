@@ -1,11 +1,11 @@
 import com.cucumber.listener.Reporter;
-import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.IOException;
 
 public class Login{
@@ -22,13 +22,8 @@ public class Login{
 
         Login.driver.get(Props.getProperty("server.safetycube.cube"));
 
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")));
-
         Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line");
         Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Telemark_64");
-
-        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[1]")).sendKeys("safety-line-eric");
-        //Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/input[2]")).sendKeys("Lesneven29");
 
         WebElement LoginButton = Login.driver.findElement(By.xpath("/html/body/app-root/app-login/div/div/div/form/button"));
         SaveScreenshot.screenshot(driver, "loginpagecube");
