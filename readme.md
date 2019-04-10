@@ -38,7 +38,7 @@ IntelliJ IDEA is recommanded for the project. You wan download it on their websi
 | [4](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/7) | Portal KNE ASR Form filling | @formportalkneasrfill| Portal KNE ASR Form filling. Must be exectuted before @cubekneasrcheck|
 | [4](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/8) | Cube KNE ASR Form checking | @formcubekneasrcheck| Cube KNE ASR Form checking. Must be exectuted after @formportalkneasrfill|
 | [5](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/15) | Cube Risks Matrix | @matricerisques | Checks if filters and values in the table results are matching. And also if the tab has changed. |
-| [6](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/21) | Audit finding generation | @auditgenerationfindings | Checks if findings are created if the audit is closed while some non compliances are still opened |
+| [6](http://192.168.31.22:9090/olivierlam/SafetyCube/issues/21) | Audit finding generation | @auditfindinggeneration | Checks if findings are created if the audit is closed while some non compliances are still opened |
 
 ### How to launch the tests scenarios ?
 
