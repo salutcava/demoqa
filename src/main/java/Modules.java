@@ -39,8 +39,10 @@ public class Modules {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\""+module+"\"]")));
 
-        SaveScreenshot.screenshot(driver, module);
-
         Module.click();
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className(".loading-anim")));
+
+        SaveScreenshot.screenshot(driver, module);
     }
 }

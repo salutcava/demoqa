@@ -38,6 +38,8 @@ public class Login{
         Reporter.addStepLog("Landing to page : " + Login.driver.getCurrentUrl());
 
         SaveScreenshot.screenshot(driver, "landingtocube");
+
+        driver.navigate().refresh();
     }
 
     static void login_admin() throws IOException {
@@ -68,6 +70,8 @@ public class Login{
 
         // admin
         SaveScreenshot.screenshot(driver, "landingtoadmin");
+
+        driver.navigate().refresh();
     }
 
     static void login_portal() throws IOException {
@@ -98,5 +102,7 @@ public class Login{
 
         // portal
         SaveScreenshot.screenshot(driver, "landingtoportal");
+
+        driver.navigate().refresh();
     }
 }

@@ -1,7 +1,7 @@
 @safetycube
 @auditprogram
 @cube
-@auditgenerationfindings
+@auditfindinggeneration
 
 Feature: Verifier la generation des ecarts si des actions sont ouvertes quand on ferme un audit
   http://192.168.31.77/QA-SAFETYCUBE-MASTER/cube/#/dashboard
