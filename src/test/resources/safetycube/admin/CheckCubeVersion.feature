@@ -3,7 +3,7 @@
 @cube
 @checkcubeversion
 
-Feature: Verifier la version déployée du Cube
+Feature: Verifier la version deployee du Cube
 
   Scenario: I open the admin panel
 
