@@ -18,3 +18,8 @@ Feature: Login in as..
   Scenario: Login to the portal
     Given I am logging in to the portal
     And I close the webdriver
+
+  @loginqa
+  Scenario: Login to the qademo
+    Given I am logging in to the qademo
+    And I close the webdriver

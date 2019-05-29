@@ -1,5 +1,6 @@
 import com.cucumber.listener.Reporter;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -102,6 +103,41 @@ public class Login{
 
         // portal
         SaveScreenshot.screenshot(driver, "landingtoportal");
+
+        driver.navigate().refresh();
+    }
+
+    static void qademo() throws IOException {
+        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 60);
+
+        Login.driver.manage().window().maximize();
+
+        Login.driver.get("http://qa:8080");
+
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[1]")).sendKeys(Keys.CONTROL + "a");
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[1]")).sendKeys(Keys.DELETE);
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[2]")).sendKeys(Keys.CONTROL + "a");
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[2]")).sendKeys(Keys.DELETE);
+
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[1]")).sendKeys("safety-line");
+        Login.driver.findElement(By.xpath("/html/body/div/div/div/form/input[2]")).sendKeys("Telemark_64");
+
+        WebElement LoginButton = Login.driver.findElement(By.xpath("/html/body/div/div/div/form/button"));
+        SaveScreenshot.screenshot(driver, "loginpagecusbe");
+
+        System.out.println("Click on the login button");
+        Reporter.addStepLog("Click on the login button");
+        LoginButton.click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/app-root/app-banner/span/header/nav/div/a/span/img")));
+
+        System.out.println("Landing to page : " + Login.driver.getCurrentUrl());
+        Reporter.addStepLog("Landing to page : " + Login.driver.getCurrentUrl());
+
+        SaveScreenshot.screenshot(driver, "landingtocube");
 
         driver.navigate().refresh();
     }

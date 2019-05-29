@@ -1,28 +1,22 @@
 import com.cucumber.listener.Reporter;
-import cucumber.api.java.After;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.io.IOException;
 
 public class FormPortalKneAsrFill extends Login {
 
-    private static WebDriver driver;
-    private static JavascriptExecutor js;
-
     @Then("^I open the form formportalkneasrfill")
-    public void IOpenForm() {
+    public void open_form() throws InterruptedException {
         System.out.println("Selecting the form : ASR #form_52");
 
-        Login.wait.until(ExpectedConditions.presenceOfElementLocated(By.id("form_52")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("form_52")));
 
-        WebElement FormButton = driver.findElement(By.xpath("//*[@id=\"form_52\"]"));
+        WebElement FormButton = driver.findElement(By.id("form_52"));
+        App.highlight(driver,FormButton);
+
+
         FormButton.click();
     }
 

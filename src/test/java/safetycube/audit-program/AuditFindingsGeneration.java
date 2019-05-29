@@ -5,7 +5,6 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.IOException;
@@ -188,7 +187,7 @@ public class AuditFindingsGeneration extends Login{
         SaveButton.click();
         SaveScreenshot.screenshot(driver,"NonDocumenteNonImplementeSaved");
 
-        WebElement close = driver.findElement(By.xpath("//*[@id=\"modalConfirm\"]/div/div/div[1]/button"));
+        WebElement close = driver.findElement(By.xpath("//*[@id=\"modalConfirmSave\"]/div/div/div[3]/button"));
         wait.until(ExpectedConditions.elementToBeClickable(close));
         close.click();
 

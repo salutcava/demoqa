@@ -17,4 +17,9 @@ public class LoginIn extends Login {
     public void i_am_logging_in_to_the_portal() throws IOException {
         Login.login_portal();
     }
+
+    @Given("^SafetyCube QA Demo")
+    public void qa_demo() throws IOException {
+        Login.qademo();
+    }
 }
