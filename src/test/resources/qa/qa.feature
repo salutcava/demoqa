@@ -9,4 +9,4 @@ Feature: Verification du nouveau menu
 #    And I go to the others advanced page
 #    Then I get the version number
 #    And I get the customer
-    And I close the webdriver
+#    And I close the webdriver

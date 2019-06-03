@@ -12,11 +12,14 @@ public class qa extends Login {
         System.out.println("I catch every modules anchor");
         Reporter.addStepLog("I catch every module anchor");
 
-        List ModulesAnchor = driver.findElements(By.cssSelector(" div.panel-heading > h4 > a"));
+        List ModulesAnchor = driver.findElements(By.cssSelector(" div.panel-menu-category div.panel-heading > h4 > a"));
 
-//        ModulesAnchor.get(1);
         System.out.println(ModulesAnchor.size());
-        //Reporter.addStepLog(ModulesAnchor.get(1));
+
+        for(int i = 0;i<ModulesAnchor.size();i++){
+            App.highlight(driver,ModulesAnchor.get(i));
+        }
+
 
 
         SaveScreenshot.screenshot(driver, "igototheothersadvancedpage");
