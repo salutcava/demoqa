@@ -4,6 +4,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -13,11 +15,27 @@ public class Login{
     static WebDriver driver;
     static WebDriverWait wait;
 
-    static void login_cube() throws IOException {
+    static void open_browser(){
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
         System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(capabilities);
         wait = new WebDriverWait(driver, 60);
+
+        Login.driver.manage().window().maximize();
+    }
+
+    static void login_cube() throws IOException {
+        open_browser();
+
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
+        WebDriver driver = new ChromeDriver(capabilities);
 
         Login.driver.manage().window().maximize();
 
@@ -44,10 +62,7 @@ public class Login{
     }
 
     static void login_admin() throws IOException {
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 60);
+        open_browser();
 
         Login.driver.manage().window().maximize();
 
@@ -76,10 +91,7 @@ public class Login{
     }
 
     static void login_portal() throws IOException {
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 60);
+        open_browser();
 
         Login.driver.manage().window().maximize();
 
@@ -108,12 +120,7 @@ public class Login{
     }
 
     static void qademo() throws IOException {
-        System.setProperty("webdriver.chrome.driver", Props.getProperty("driver"));
-
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 60);
-
-        Login.driver.manage().window().maximize();
+        open_browser();
 
         Login.driver.get("http://qa:8080");
 
