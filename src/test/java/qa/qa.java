@@ -10,17 +10,16 @@ public class qa extends Login {
 
     @And("^I open every modules")
     public void i_open_every_modules() throws IOException, InterruptedException {
-        System.out.println("I catch every modules anchor");
-        Reporter.addStepLog("I catch every module anchor");
+        System.out.println("I unfold modules");
+        Reporter.addStepLog("I unfold modules");
 
-        //List<WebElement> ModulesAnchor = driver.findElements(By.cssSelector(" div.panel-menu-category div.panel-heading > h4 > a"));
         List<WebElement> ModulesAnchor = driver.findElements(By.cssSelector(" div.panel-menu-category div.panel-group > div.panel.panel-default div.panel-heading > h4 > a"));
 
         System.out.println(ModulesAnchor.size());
 
         for(int i = 0;i < ModulesAnchor.size();i++){
-            System.out.println("I catch every modules anchor");
-            Reporter.addStepLog("I catch every module anchor");
+            System.out.println("I unfold " + ModulesAnchor.get(i).getText() + " module");
+            Reporter.addStepLog("I unfold " + ModulesAnchor.get(i).getText() + " module");
             System.out.println(i + " : " + ModulesAnchor.get(i));
             App.highlight(driver,ModulesAnchor.get(i));
             ModulesAnchor.get(i).click();
