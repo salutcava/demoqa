@@ -114,3 +114,10 @@ Reporter.addStepLog("Events counts do not matche");
 ## Useful functions
 
 Read the [function.md](function.md) file
+
+
+## Firefox webdriver
+
+Read the doc here -> https://github.com/mozilla/geckodriver/releases/tag/v0.26.0 (install Microsoft Visual Studio redistributable
+runtime)
+
